@@ -61,3 +61,12 @@
     margin-bottom: 0;
   }
 }
+
+// Rights notice under each post. Deliberately quiet — it is a statement of
+// terms, not a warning label.
+
+.post-rights {
+  margin-top: 2em;
+  font-size: .78em;
+  color: #9a9a9a;
+}

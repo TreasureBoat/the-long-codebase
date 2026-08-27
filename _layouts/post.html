@@ -32,5 +32,11 @@ layout: default
 
   {%- include cta.html -%}
 
+  {%- assign rights_holder = author.name | default: site.title -%}
+  <p class="post-rights">
+    &copy; {{ page.date | date: "%Y" }} {{ rights_holder }}. All rights reserved.
+    Quoting with attribution is welcome; republication is not.
+  </p>
+
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>

@@ -1,0 +1,55 @@
+Copyright (c) 2026 Ken Ishimoto and Paul Yu.
+
+This repository holds two different kinds of material, under two different terms.
+
+
+THE WRITING — ALL RIGHTS RESERVED
+---------------------------------
+
+The posts in _posts/, and the prose in about.md, work.md and index.md, are the
+copyright of their respective authors, as credited in each byline. All rights
+reserved.
+
+You are welcome to quote from them for commentary, criticism, review or
+reporting, with attribution and a link to the original. Linking and quoting is
+the point; we would rather be read than not.
+
+You may not republish them in whole or in substantial part, in any medium,
+without written permission. That includes reproducing them on another site,
+with or without credit, and reproducing them behind a paywall.
+
+If you want to do something not covered here, ask. Both addresses are on the
+site and we generally say yes.
+
+
+THE SITE MACHINERY — MIT
+------------------------
+
+Everything else — the Jekyll configuration, layouts, includes, stylesheets, data
+files and git hooks (_config.yml, _layouts/, _includes/, _data/, assets/,
+.githooks/) — is offered under the MIT License, below. Take any of it.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+ACKNOWLEDGEMENT
+---------------
+
+This site is built on the minima theme, copyright (c) 2016-present Parker Moore
+and the minima contributors, used under the MIT License. _layouts/post.html is
+adapted from minima's.
