@@ -11,9 +11,14 @@ web application framework in the WebObjects tradition, plus the applications and
 built on it. Enterprise Objects, Key-Value Coding, rule-based UI, and databases that have
 been running since before some of the tooling around them existed.
 
-**Paul** is a product manager rather than a developer. He had been using Claude across a
-dozen projects while Ken was still refusing to, and he is the reason Ken started at all —
-though not by arguing.
+**Paul Yu** is a technical generalist — enough depth to work with the engineers, enough
+functional and business knowledge to work with the subject matter experts. A mid-level Java
+developer who can design a schema for any domain and has spent a career becoming the domain
+expert by building the system. Fifteen years sole-maintaining a teacher evaluation product
+he wrote himself.
+
+He had been using Claude across a dozen projects while Ken was still refusing to, and he is
+the reason Ken started at all — though not by arguing.
 
 ## Why this blog
 

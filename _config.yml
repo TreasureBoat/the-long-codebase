@@ -36,6 +36,7 @@ github_username: treasureboat
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 # ---------------------------------------------------------------------------
 # Publishing
@@ -51,6 +52,11 @@ future: true
 
 # Show post intros on the home page rather than a bare list of titles.
 show_excerpts: true
+
+# Nav order. Without this minima orders pages however it finds them.
+header_pages:
+  - about.md
+  - work.md
 
 # ---------------------------------------------------------------------------
 # Post defaults
