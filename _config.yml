@@ -1,59 +1,71 @@
-# Welcome to Jekyll!
+# The Long Codebase — site settings
 #
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# NOTE: this file is NOT reloaded by `bundle exec jekyll serve`. Restart after editing.
 
-title: TreasureBoat.org
+# ---------------------------------------------------------------------------
+# Site identity
+# ---------------------------------------------------------------------------
+
+title: The Long Codebase
 email: k.ishimoto@treasureboat.org
-description: >- # this means to ignore newlines until "baseurl:"
-  TreasureBoat is a Java web application framework in the WebObjects tradition —
-  Enterprise Objects, Key-Value Coding and rule-based UI, with modern Maven and
-  IntelliJ tooling. Guides, notes and release news from the project.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://blog.treasureboat.org" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  ishimoto
+description: >- # ignore newlines until the next key
+  Two developers, one twenty-year-old codebase, and an AI. Notes from real work on
+  long-lived production systems — the kind of code most companies actually have,
+  rather than the greenfield demo everybody writes about.
 
-# Build settings
+# ---------------------------------------------------------------------------
+# URLs
+# ---------------------------------------------------------------------------
+#
+# This is a PROJECT page (treasureboat.github.io/the-long-codebase), not a user page,
+# so baseurl MUST be the repository name. Leave it empty and every stylesheet, link and
+# image resolves to the wrong path — the site renders unstyled with broken navigation
+# and looks broken rather than misconfigured.
+#
+# If a custom domain is added later: set url to that domain and baseurl back to "".
+
+baseurl: "/the-long-codebase"
+url: "https://treasureboat.github.io"
+
+github_username: treasureboat
+
+# ---------------------------------------------------------------------------
+# Build
+# ---------------------------------------------------------------------------
+
 theme: minima
 plugins:
   - jekyll-feed
 
-# Publishing settings
-timezone: Asia/Tokyo   # judge post "future" dates in JST, not the build server's UTC
-future: true           # publish posts even if their date is slightly ahead of build time
+# ---------------------------------------------------------------------------
+# Publishing
+# ---------------------------------------------------------------------------
+#
+# The build server runs in UTC. Without these, a post dated in a timezone ahead of it
+# counts as "in the future" and is silently left out of the build - the post simply does
+# not appear, with no error. This blog has authors in two timezones, so it is more
+# exposed to that, not less.
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+timezone: Asia/Tokyo
+future: true
+
+# Show post intros on the home page rather than a bare list of titles.
+show_excerpts: true
+
+# ---------------------------------------------------------------------------
+# Post defaults
+# ---------------------------------------------------------------------------
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .idea/
+  - README.md

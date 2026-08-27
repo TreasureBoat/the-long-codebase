@@ -1,0 +1,14 @@
+# Bylines. Referenced from a post's front matter as `author: ken`.
+# The contrast between the two voices is the point of this blog, so every post says
+# plainly who is writing and why they are worth listening to on it.
+
+ken:
+  name: Ken Ishimoto
+  role: >-
+    Twenty years on the same Java codebase. Builds and maintains the TreasureBoat
+    framework and runs the servers it lives on.
+
+paul:
+  name: Paul
+  role: >-
+    Product manager, not a coder. Was the skeptic.
