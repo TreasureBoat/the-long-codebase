@@ -6,10 +6,9 @@ date: 2026-08-27
 author: ken
 ---
 
-<!-- PAUL: your introduction goes here. The framing that works, I think, is the one you
-     have and I don't — you were the skeptic, you watched this from outside, and you can
-     say why a two-person shop doing this on a WebObjects-lineage Java stack is a more
-     useful data point than another greenfield demo. -->
+<!-- PAUL: if you want a few lines at the top, the useful angle is the one only you have —
+     you had already used Claude across a dozen projects while Ken was still refusing to,
+     so you watched this kind of day from the outside long before he did. -->
 
 ## The job
 
