@@ -1,0 +1,63 @@
+---
+# Front matter (even empty) is what tells Jekyll to process this file through Sass.
+# This overrides minima's own assets/main.scss at the same path, which is the documented
+# way to add rules to the theme. The layouts already link /assets/main.css, so nothing
+# else needs changing.
+---
+@charset "utf-8";
+
+@import "minima";
+
+// ---------------------------------------------------------------------------
+// Post header
+// ---------------------------------------------------------------------------
+
+.post-subtitle {
+  font-size: 1.1em;
+  color: #666;
+  font-weight: 400;
+  margin-top: -.4em;
+}
+
+.post-byline-role {
+  font-size: .85em;
+  color: #828282;
+  margin-top: -.6em;
+  font-style: italic;
+}
+
+// ---------------------------------------------------------------------------
+// End-of-post call to action
+// ---------------------------------------------------------------------------
+//
+// Styled to read as a footer rather than as the essay's conclusion. The separation is
+// the point: a reader should be able to tell at a glance where the argument stops and
+// the standing offer starts, so the offer never colours the argument.
+
+.post-cta {
+  margin-top: 3em;
+  padding-top: 1.5em;
+  border-top: 1px solid #e8e8e8;
+  font-size: .95em;
+  color: #555;
+
+  h3 {
+    font-size: 1em;
+    font-weight: 600;
+    color: #424242;
+    margin-bottom: .6em;
+  }
+
+  p {
+    margin-bottom: .8em;
+  }
+
+  .cta-hook {
+    font-style: italic;
+    color: #666;
+  }
+
+  .cta-contact {
+    margin-bottom: 0;
+  }
+}

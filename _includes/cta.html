@@ -1,0 +1,37 @@
+{%- comment -%}
+  Standing call to action, rendered after every post by _layouts/post.html.
+
+  Deliberately quieter than the post above it. These essays earn attention by being
+  candid about failure, including the machine's; a loud pitch here would reframe that
+  candour as a sales device and cost more than it brings in. Keep it understated, keep it
+  in the authors' voice, and keep the first ask non-transactional.
+
+  Per-post control from front matter:
+    cta: false        omit it entirely
+    cta_hook: "..."   one sentence specific to this post, shown above the standing text
+{%- endcomment -%}
+
+{%- unless page.cta == false -%}
+<aside class="post-cta">
+  <h3>Working on something like this?</h3>
+
+  {%- if page.cta_hook %}
+  <p class="cta-hook">{{ page.cta_hook }}</p>
+  {%- endif %}
+
+  <p>
+    We write these up because there is not much honest writing about AI on systems that are
+    old, load-bearing and unfashionable — and because the replies teach us things.
+  </p>
+
+  <p>
+    If you maintain something you are afraid to touch, or you are trying to introduce AI to
+    a team with good reasons to distrust it, we would like to hear about it. We take on this
+    kind of work, and we speak about it.
+  </p>
+
+  <p class="cta-contact">
+    <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+  </p>
+</aside>
+{%- endunless -%}

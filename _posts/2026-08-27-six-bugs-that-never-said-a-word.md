@@ -4,11 +4,24 @@ title: "Six bugs that never said a word"
 subtitle: "A day converting a five-year-old production database with Claude Code — including the four times it was confidently wrong"
 date: 2026-08-27
 author: ken
+cta_hook: "If you have a cutover coming and have not rehearsed it, that is the part of this we would argue about first."
+excerpt: >-
+  Six real bugs in one day converting a five-year-old production database. Five of them were
+  silent — work that did not happen, reported as if it had. Including the four times Claude
+  was confidently wrong.
+#
+# Editorial notes — kept in front matter so they never reach the page source.
+#
+#
+#   PAUL: if you want a few lines at the top, the useful angle is the one only you have —
+#   you had already used Claude across a dozen projects while Ken was still refusing to,
+#   so you watched this kind of day from the outside long before he did.
+#
+#   KEN: things I might still add —
+#   - a line about what the two-day window means for the actual cutover plan
+#   - whether to name FrontBase openly (I think yes, it's part of why this is unusual)
+#   - Paul may want a closing paragraph tying back to his intro
 ---
-
-<!-- PAUL: if you want a few lines at the top, the useful angle is the one only you have —
-     you had already used Claude across a dozen projects while Ken was still refusing to,
-     so you watched this kind of day from the outside long before he did. -->
 
 ## The job
 
@@ -190,8 +203,3 @@ database, and I knew what a duplicate admin role smelled like before we had any 
 
 Neither half would have finished this alone. That's not a slogan, it's just what the log
 shows.
-
-<!-- KEN: things I might still add —
-     - a line about what the two-day window means for the actual cutover plan
-     - whether to name FrontBase openly (I think yes, it's part of why this is unusual)
-     - Paul may want a closing paragraph tying back to his intro -->
