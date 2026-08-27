@@ -29,4 +29,4 @@ for years — with the failures left in. Including the ones that were ours, and 
 that were the machine's.
 
 Ken was the skeptic, and had good reasons. That story is
-[here]({% post_url 2026-08-20-160-countries %}).
+[here]({{ site.baseurl }}{% post_url 2026-08-20-160-countries %}).
