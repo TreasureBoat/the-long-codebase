@@ -10,7 +10,7 @@ that is the work we do.
 ## What we take on
 
 **An assessment.** You need to know what is actually in a system before you commit to
-anything — what modernising it would cost, what would break, what nobody has looked at in a
+anything — what modernizing it would cost, what would break, what nobody has looked at in a
 decade. Fixed scope, and the report is yours whether or not we do anything else. Most
 engagements should start here, because most plans we are asked about are built on a guess
 about the current state.
@@ -26,7 +26,7 @@ upgrades, cutovers with a fixed window and paying customers on the other side. T
 rehearsal: run it, count what changed, run it again, until the count stops surprising you.
 
 **Getting AI into a team that distrusts it.** Often the team is right to. We have both been
-the sceptic — Ken refused for two years after being handed a country list that was quietly
+the skeptic — Ken refused for two years after being handed a country list that was quietly
 missing dozens of entries, and Paul managed engineers using it for years without writing a
 line with it himself. What we can offer is the structure that makes it safe: where it earns
 its keep, where it will confidently tell you something false, and how to catch that before
@@ -46,7 +46,13 @@ can staff before you plan around it.
 
 ## Starting
 
-Tell us what you have — [{{ site.email }}](mailto:{{ site.email }}).
+Tell us what you have.
+
+**Ken** — [{{ site.data.authors.ken.email }}](mailto:{{ site.data.authors.ken.email }}) —
+frameworks, database conversions, and cutovers with a window you cannot miss.
+
+**Paul** — [{{ site.data.authors.paul.email }}](mailto:{{ site.data.authors.paul.email }}) —
+reverse engineering undocumented systems, modernization, and getting a skeptical team started.
 
 The most useful first message describes the system, roughly how old it is, and what you are
 afraid of.

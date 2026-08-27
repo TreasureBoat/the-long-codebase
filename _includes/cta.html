@@ -8,6 +8,9 @@
 
   Per-post control from front matter:
     cta: false        omit it entirely
+
+  The contact address is the post author's, from _data/authors.yml, so a reply goes to
+  whoever wrote the thing the reader just finished.
     cta_hook: "..."   one sentence specific to this post, shown above the standing text
 {%- endcomment -%}
 
@@ -30,8 +33,10 @@
     <a href="{{ '/work/' | relative_url }}">Here is what we take on</a>.
   </p>
 
+  {%- assign cta_author = site.data.authors[page.author] -%}
+  {%- assign cta_email = cta_author.email | default: site.email -%}
   <p class="cta-contact">
-    <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+    <a href="mailto:{{ cta_email }}">{{ cta_email }}</a>
     &middot;
     <a href="{{ '/feed.xml' | relative_url }}">follow the series</a>
   </p>

@@ -4,12 +4,14 @@
 
 ken:
   name: Ken Ishimoto
+  email: k.ishimoto@treasureboat.org
   role: >-
     Twenty years on the same Java codebase. Builds and maintains the TreasureBoat
     framework and runs the servers it lives on. Was the skeptic.
 
 paul:
   name: Paul Yu
+  email: paul.yu@green-orchid-llc.com
   role: >-
     Technical generalist — enough depth for the engineers, enough functional knowledge for
     the subject matter experts. Mid-level Java developer. Was the AI novice.
