@@ -70,6 +70,8 @@ defaults:
       layout: "post"
 
 exclude:
+  - CLAUDE.md
+  - .githooks/
   - Gemfile
   - Gemfile.lock
   - vendor/
