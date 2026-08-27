@@ -1,0 +1,41 @@
+#!/bin/sh
+#
+# Refuse to commit a post that still contains draft placeholders or editorial
+# HTML comments.
+#
+# Both are silent failures, which is the thing this blog is about: the build
+# succeeds, the page renders, nothing errors, and the mistake is visible only to
+# readers. Editorial notes in HTML comments shipped to the public page source
+# once already, including one asking whether to name a client.
+#
+# Enable in a fresh clone with:  git config core.hooksPath .githooks
+# Bypass deliberately with:      git commit --no-verify
+
+fail=0
+posts=$(git diff --cached --name-only --diff-filter=ACM | grep '^_posts/.*\.md$')
+
+[ -z "$posts" ] && exit 0
+
+for f in $posts; do
+    staged=$(git show ":$f")
+
+    if printf '%s' "$staged" | grep -q '\[\['; then
+        echo "BLOCKED  $f  — unfilled draft placeholders:"
+        printf '%s' "$staged" | grep -n '\[\[' | cut -c1-100 | sed 's/^/    /'
+        fail=1
+    fi
+
+    if printf '%s' "$staged" | grep -q '<!--'; then
+        echo "BLOCKED  $f  — HTML comments publish to the page source:"
+        printf '%s' "$staged" | grep -n '<!--' | cut -c1-100 | sed 's/^/    /'
+        echo "    Move editorial notes into front matter as '#' comments instead."
+        fail=1
+    fi
+done
+
+if [ "$fail" -ne 0 ]; then
+    echo ""
+    echo "Nothing committed. Fix the above, or use --no-verify if you mean it."
+    exit 1
+fi
+exit 0
