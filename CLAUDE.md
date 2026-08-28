@@ -81,9 +81,20 @@ Pages runs its own Jekyll 3.10. So verify against the live site after pushing ra
 trusting a green build:
 
 ```sh
-gh api repos/TreasureBoat/the-long-codebase/pages/builds/latest --jq .status
-curl -s https://treasureboat.github.io/the-long-codebase/<path> | grep ...
+# Wait for the build whose commit matches HEAD. Polling only for status "built"
+# returns instantly on the PREVIOUS build and reports a stale success.
+HEAD=$(git rev-parse HEAD)
+gh api repos/TreasureBoat/the-long-codebase/pages/builds/latest \
+  --jq '.status + " " + (.commit // "-")'
+
+# Then bust the CDN. Pages serves with max-age=600, so a plain curl straight
+# after a push can hand back a ten-minute-old page and look like a failed deploy.
+curl -s "https://treasureboat.github.io/the-long-codebase/<path>?cb=$RANDOM" \
+  -H 'Cache-Control: no-cache' | grep ...
 ```
+
+Both of those have already produced false readings here — once reporting success
+against an older build, once showing corrected text as still wrong.
 
 Switching the Gemfile to the `github-pages` gem would make local preview match production.
 The line is already in the Gemfile, commented out.
