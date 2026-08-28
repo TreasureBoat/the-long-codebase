@@ -104,5 +104,28 @@ The line is already in the Gemfile, commented out.
 
 **For Paul:**
 
-- The typewriter post says Ken helped modernize "some years back", but the manual attempt was
-  spring/summer 2025. Two separate attempts, or does that line need correcting on a live page?
+- **The modernization was not one attempt, it was three summers,** and it is still going.
+  Ken's account: summer 2024, the database structure was reworked onto BaseModel; summer
+  2025, the UI moved onto Keen; summer 2026, Java 10 to 21 plus bug fixes. It runs on that
+  cadence because it is a school application — changes can only land during the summer
+  holiday — and because it is a side project for both of you on top of other work.
+  So "we did not finish" may be the wrong frame: nothing failed, it is a constrained
+  cadence that is still running. Your post, your call, but the facts are now available.
+
+## Settled — 28 Aug 2026
+
+- **The "two years" figure was wrong and is corrected.** Paul's push began around November
+  2025; he built the plugin prototype at the start of December 2025 and sent screenshots
+  over Discord; Ken bought his IntelliJ licences and started on the free Claude plan that
+  same month. So the gap between first pitch and first use was about a month, and the whole
+  story is nine months old, not two years. It had reached `/work/` as "Ken refused for two
+  years", which was a factual overstatement on a page selling services.
+- **"A person who does not write code" is gone from the country-enum post.** It contradicted
+  Paul's own post on the same site. What was actually remarkable is stated instead: he had
+  never written an IntelliJ plugin, does not know the framework internals, and did it in the
+  evenings alongside a full-time job.
+- **The repo stays public and single.** The controls added on 27 Aug — the pre-commit hook,
+  notes in front matter, `_drafts/` gitignored — address the cause. A private drafting repo
+  with copy-out to a public one is process that will be bypassed the first busy week, and it
+  would take the site down on GitHub Free for organisations. The standing rule is the one at
+  the top of this file: assume anything committed here is public.

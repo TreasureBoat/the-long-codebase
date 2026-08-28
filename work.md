@@ -25,12 +25,12 @@ off COBOL and IDMS.
 upgrades, cutovers with a fixed window and paying customers on the other side. The method is
 rehearsal: run it, count what changed, run it again, until the count stops surprising you.
 
-**Getting AI into a team that distrusts it.** Often the team is right to. We have both been
-the skeptic — Ken refused for two years after being handed a country list that was quietly
-missing dozens of entries, and Paul managed engineers using it for years without writing a
-line with it himself. What we can offer is the structure that makes it safe: where it earns
-its keep, where it will confidently tell you something false, and how to catch that before
-it reaches production.
+**Getting AI into a team that distrusts it.** Often the team is right to. We have both
+been on that side — Ken stopped using an assistant outright after it handed him a country
+list that was quietly missing dozens of entries, and Paul managed engineers using it for
+years without writing a line with it himself. What we can offer is the structure that makes
+it safe: where it earns its keep, where it will confidently tell you something false, and
+how to catch that before it reaches production.
 
 **Talks and workshops.** We write this up because there is not much honest writing about it.
 We will also come and say it out loud.
