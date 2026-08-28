@@ -110,8 +110,8 @@ This one is about what I did with the lessons afterward.
 Because the whole time I was learning this at work, my own fifteen-year-old codebase was
 sitting there. Java 8. MySQL. No regression coverage worth the name. An interface that had
 aged the way interfaces do when the only person who can change it is also doing sales,
-support and hosting. Ken had helped me try to modernize it by hand, part-time, some years
-back. We did not finish. I will write about why we did not finish, because that failure is
+support and hosting. Ken had helped me try to modernize it by hand, part-time. We did not
+finish. I will write about why we did not finish, because that failure is
 the most useful thing I have to measure against.
 
 Over the past year I went back at it. Java 8 to Java 21. MySQL to PostgreSQL. A Selenium
