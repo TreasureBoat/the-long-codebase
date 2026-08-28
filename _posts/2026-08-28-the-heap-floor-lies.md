@@ -91,9 +91,12 @@ the control we needed and had not thought to look for.
 `jmap` will tell you there are 3,224 instances of a class. It will not tell you who is holding
 them, and that is the only question that matters. The JDK ships nothing that answers it.
 
-So Claude wrote one: about 150 lines that parse an HPROF dump — strings, class loads, class
-dumps, instance dumps, object arrays, GC roots, statics — and then walk *inbound* references,
-level by level, from a suspect object toward whatever is keeping it alive.
+So Claude wrote one: a couple of hundred lines that parse an HPROF dump — strings, class
+loads, class dumps, instance dumps, object arrays, GC roots, statics — and then walk *inbound*
+references, level by level, from a suspect object toward whatever is keeping it alive. It is
+[on GitHub as a gist](https://gist.github.com/ishimoto/cc1b470fbf0d2c22a7bec7b400e66ab3),
+together with a self-test that builds a program with a known answer, takes a real heap dump of
+it, and checks the tool describes it correctly.
 
 That is the part of this I would not have done. Not could not — would not. It is an afternoon
 of fiddly binary-format work to answer one question, on a Saturday, with three applications
@@ -111,7 +114,17 @@ the component is self-referential, and a naive walker stops there and declares i
 The garbage collector collects cycles perfectly well. You have to keep walking until you reach
 a static field or a real GC root.
 
-With those fixed it produced a chain in one pass:
+Both are in the self-test, because a tool like this is only worth anything if you can show it
+gives the right answer on a case where you already know it. The sharpest of those checks holds
+the same objects strongly *and* weakly, with the strong holder deliberately buried deeper — one
+flag apart, on one dump:
+
+```
+default      100  static LeakDemo.deeplyHeld      ← correct
+--keep-weak  100  static LeakDemo.alsoInWeakMap   ← wrong, and confident about it
+```
+
+With the filters in place it produced a chain in one pass:
 
 ```
 TBWResponseRewriter._ajaxPageUserInfos   (static, 3,571 entries)
