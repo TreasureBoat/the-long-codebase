@@ -11,6 +11,21 @@
 # Enable in a fresh clone with:  git config core.hooksPath .githooks
 # Bypass deliberately with:      git commit --no-verify
 
+# Identity guard. Paul has a work GitHub account with pull-only access here.
+# A commit or gh action under it would put an employer-linked name permanently on
+# a public repository that deliberately names no employer anywhere.
+email=$(git config user.email)
+case "$email" in
+    pyu13821@gmail.com|k.ishimoto@treasureboat.org) ;;
+    *)
+        echo "BLOCKED  commit identity is <$email>"
+        echo "    Expected pyu13821@gmail.com or k.ishimoto@treasureboat.org."
+        echo "    Set it with:  git config user.email <address>"
+        echo "    New author? Add yourself to .githooks/pre-commit."
+        exit 1
+        ;;
+esac
+
 fail=0
 posts=$(git diff --cached --name-only --diff-filter=ACM | grep '^_posts/.*\.md$')
 

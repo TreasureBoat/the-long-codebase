@@ -11,6 +11,21 @@ git config core.hooksPath .githooks
 
 Without it the pre-commit hook does not run and the protections below are off.
 
+## Identity
+
+Commit and act as the personal account only. Paul has a second, work-linked GitHub
+account with pull-only access to this repo; anything done under it leaves an
+employer's name on a public repository that names no employer anywhere on the site.
+
+- Git identity is pinned per-repo, and the pre-commit hook blocks anything else.
+- **`gh` is not covered by that.** It acts as whichever account is globally active,
+  so check before opening a PR or issue:
+
+```sh
+gh auth status          # confirm the active account
+gh auth switch --user pyu13821
+```
+
 ## Hard rules
 
 **1. No HTML comments in posts.** `<!-- KEN: ... -->` notes shipped to the live page source
