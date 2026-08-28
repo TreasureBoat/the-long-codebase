@@ -6,10 +6,20 @@ permalink: /about/
 
 ## Who writes here
 
-**Ken Ishimoto** has spent about twenty years on the same Java codebase — TreasureBoat, a
-web application framework in the WebObjects tradition, plus the applications and servers
-built on it. Enterprise Objects, Key-Value Coding, rule-based UI, and databases that have
-been running since before some of the tooling around them existed.
+**Ken Ishimoto** has been shipping software since 1988, starting as a one-man team writing a
+sales company's database on a Sharp X68000 under OS/9. He builds and maintains TreasureBoat,
+a web application framework in the WebObjects tradition, along with the applications and
+servers running on it.
+
+When the closed-source framework it descends from was discontinued, the people around him
+split between abandoning their applications and freezing on a version that would never move
+again. He did neither: he reverse-engineered the Foundation, Enterprise and WebCore layers by
+hand, because that was the only way to keep fifteen years of work alive. Everyone he asked
+for help told him it was impossible.
+
+He left Vienna at eighteen and has lived near Tokyo ever since. Japanese, English and
+programming he taught himself — which is the same skill the work needs, applied earlier: work
+out how something behaves when nobody is going to explain it to you.
 
 **Paul Yu** is a technical generalist — enough depth to work with the engineers, enough
 functional and business knowledge to work with the subject matter experts. A mid-level Java
