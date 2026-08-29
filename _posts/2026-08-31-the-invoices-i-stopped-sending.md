@@ -105,10 +105,11 @@ framework and me.
 
 I went back through the commit history to write this, and it is not the story I remembered.
 I remembered a hard spring and summer. What actually happened is that Ken worked through the
-second half of 2023, then nothing at all for three quarters — not one component between
-October 2023 and June 2024. Then a burst in the autumn of 2024 that put in most of the work,
-then nothing again, then a second burst at the start of 2025 that finished it. Two years of
-calendar time containing perhaps four months of actual work.
+second half of 2023, then the conversion stopped for three quarters — not one component
+between October 2023 and June 2024, though the application itself never stood still. Then a
+burst in the autumn of 2024 that put in most of the work, then nothing again, then a second
+burst at the start of 2025 that finished it. Two years of calendar time containing perhaps
+four months of work on the conversion itself.
 
 That is what a side project alongside two day jobs looks like when you chart it. Not steady
 progress. Bursts, with months in between where life took the evenings, and each burst
