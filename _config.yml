@@ -53,6 +53,11 @@ future: true
 # Show post intros on the home page rather than a bare list of titles.
 show_excerpts: true
 
+# GA4. minima renders this only in production, so local builds are not counted.
+# NOTE: minima 2.5 ships a Universal Analytics snippet, which is dead and cannot
+# use a G- id — _includes/google-analytics.html overrides it with gtag.js.
+google_analytics: G-6QM98184JK
+
 # Nav order. Without this minima orders pages however it finds them.
 header_pages:
   - about.md

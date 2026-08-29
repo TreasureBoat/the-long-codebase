@@ -1,0 +1,32 @@
+{%- comment -%}
+  Overrides minima's own google-analytics.html.
+
+  The theme's version emits the Universal Analytics snippet (analytics.js).
+  Universal Analytics stopped processing data in 2023 and does not accept a G-
+  prefixed GA4 measurement ID, so the theme's include would have loaded happily
+  and recorded nothing at all — a green tag with no data behind it.
+
+  head.html renders this only when jekyll.environment == 'production' and
+  site.google_analytics is set. GitHub Pages builds with JEKYLL_ENV=production,
+  so this is live on the site and absent from local builds, which keeps local
+  preview traffic out of the reports.
+
+  The Do Not Track check is carried over from minima's version deliberately: it
+  was there before, and silently dropping it while replacing the file would be
+  taking something away from readers that nobody asked us to take.
+{%- endcomment -%}
+<script>
+  if (!(window.doNotTrack === "1" || navigator.doNotTrack === "1"
+        || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1")) {
+
+    var gaScript = document.createElement('script');
+    gaScript.async = true;
+    gaScript.src = 'https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}';
+    document.head.appendChild(gaScript);
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{ site.google_analytics }}');
+  }
+</script>
