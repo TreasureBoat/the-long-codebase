@@ -5,9 +5,9 @@ subtitle: "I shipped a version I knew was not finished, and then I could not bil
 author: paul
 series: modernization
 excerpt: >-
-  Nobody complained. Nobody would have known. I had spent a spring and a summer rewriting
-  every UI component in a fifteen-year-old product by hand, run out of road, and deployed it
-  anyway — and after that I could not send the invoice.
+  Nobody complained. Nobody would have known. Two years of evenings had rebuilt 161 of the
+  165 screens in a fifteen-year-old product by hand, and I deployed it knowing it was not
+  clean — after which I could not send the invoice.
 cta_hook: "If you are one person carrying a product that people pay for, you already know the arithmetic in this post."
 date: 2026-08-31 09:00:00 -0400
 #
@@ -73,16 +73,15 @@ stopped happening.
 The base did not collapse. It eroded. No new districts after that, ordinary attrition, and
 the number above is where it landed.
 
-## The decision we made in January
+## Two years, four months of work
 
 Ken was modernizing and refactoring TreasureBoat by hand — the framework my product sits on,
 which he has maintained for twenty years.
 
-In January we decided to follow him and modernize the application properly. Not because
-anyone asked us to, but because I had already been left behind once by a framework version
-and I knew exactly what that costs. Staying close to his refactoring meant my application
-would keep working with the framework as it moved. Falling further behind meant one day
-facing a jump too large to make at all.
+We decided to follow him. Not because anyone asked us to, but because I had already been
+left behind once by a framework version and I knew exactly what that costs. Staying close to
+his refactoring meant my application would keep working with the framework as it moved.
+Falling further behind meant one day facing a jump too large to make at all.
 
 It was the right call. I still think it was the right call.
 
@@ -95,11 +94,22 @@ delete the old ones. The new UI went on top and the old components stayed undern
 if we ran out of time we could still ship the old application without a large change. All of
 it by hand, in evenings and weekends, on a fifteen-year-old codebase with no regression tests.
 
-Ken started it on his own. I had just changed jobs and there was nothing left in my
-evenings, so for the first months of it he worked alone on my application, and I joined him
-in late spring.
+Ken started in June 2023. I joined him in September 2024 — fifteen months later, which tells
+you most of what you need to know about how much of my evenings the day job was taking.
 
-We are both good developers. We got a great deal done. We ran out of time.
+I went back through the commit history to write this, and it is not the story I remembered.
+I remembered a hard spring and summer. What actually happened is that Ken worked through the
+second half of 2023, then nothing at all for three quarters — not one component between
+October 2023 and June 2024. Then a burst in the autumn of 2024 that put in most of the work,
+then nothing again, then a second burst at the start of 2025 that finished it. Two years of
+calendar time containing perhaps four months of actual work.
+
+That is what a side project alongside two day jobs looks like when you chart it. Not steady
+progress. Bursts, with months in between where life took the evenings, and each burst
+starting with a week of remembering how any of it worked.
+
+We are both good developers. Between us we converted 161 of the 165 screens. What we never
+did was make it clean.
 
 ## The trade I made
 
@@ -108,8 +118,7 @@ is not a date I choose. It is the date the product has, it is the same every yea
 does not move.
 
 So at the end of that summer the choice was not whether to cut over. It was which version to
-cut over on: the old one, which worked, or the one I had spent the spring and summer
-building.
+cut over on: the old one, which worked, or the one we had spent two years building.
 
 I deployed what I had.
 
@@ -123,8 +132,9 @@ I deployed it anyway because the new version was better. Not marginally better �
 architecture underneath and the UI elements on top of it were both a long way ahead of what
 fifteen years of incremental change had left me with. That part had worked.
 
-What I could not do was tell you how much was still wrong. Every component had changed, and
-one person clicking through an application on a weeknight does not cover that surface. So I
+What I could not do was tell you how much was still wrong. Every screen in the application
+had a new component behind it, and one person clicking through on a weeknight does not cover
+that surface. So I
 made a trade: ship something I believed was substantially better, and accept an amount of
 residual wrongness I had no way to measure.
 
@@ -158,9 +168,9 @@ That summer I also changed jobs, into a role in a technical domain I knew nothin
 which is where I finally started using Claude Code properly. I have written about that part
 [here]({{ site.baseurl }}{% post_url 2026-08-27-the-typewriter-argument %}).
 
-So the same few months contained all of it: a manual refactor that beat me, a deploy I was
-not proud of, the invoices stopping, and the first time I used the thing that would
-eventually let me fix all of it. I did not see any connection between those at the time.
+So the same few months contained the end of it: a two-year refactor finally deployed, a
+deploy I was not proud of, the invoices stopping in October, and the first time I used the
+thing that would eventually let me fix all of it. I did not see any connection between those at the time.
 They were just a bad summer.
 
 ## Why I am writing this now
