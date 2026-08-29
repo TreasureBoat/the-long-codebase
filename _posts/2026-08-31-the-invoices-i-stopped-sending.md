@@ -88,10 +88,11 @@ It was the right call. I still think it was the right call.
 I knew the size of the effort. I built most of these features myself over fifteen years, so
 I knew exactly how large the system was, and I knew where the object model was awkward — the
 places with subclasses, and the places that should have had them and did not. 95 database
-tables. 165 UI components. Aligning with the new design patterns meant changing the UI layer
-wholesale: every component, both the HTML template and the Java class behind it, which is
-330 files. All of it by hand, in evenings and weekends, on a fifteen-year-old codebase with
-no regression tests.
+tables. Aligning with the new design patterns meant building a new component for every screen
+— 165 of them, each an HTML template and the Java class behind it, 330 files. We did not
+delete the old ones. The new UI went on top and the old components stayed underneath, so that
+if we ran out of time we could still ship the old application without a large change. All of
+it by hand, in evenings and weekends, on a fifteen-year-old codebase with no regression tests.
 
 Ken started it on his own. I had just changed jobs and there was nothing left in my
 evenings, so for the first months of it he worked alone on my application, and I joined him
