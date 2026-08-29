@@ -21,11 +21,11 @@ He left Vienna at eighteen and has lived near Tokyo ever since. Japanese, Englis
 programming he taught himself — which is the same skill the work needs, applied earlier: work
 out how something behaves when nobody is going to explain it to you.
 
-**Paul Yu** is a technical generalist — enough depth to work with the engineers, enough
-functional and business knowledge to work with the subject matter experts. A mid-level Java
-developer who can design a schema for any domain and has spent a career becoming the domain
-expert by building the system. Fifteen years sole-maintaining a teacher evaluation product
-he wrote himself.
+**Paul Yu** is a business-oriented project, product and program manager who can actually
+program — enough depth to work with the engineers, enough functional knowledge to work with
+the subject matter experts, and a career spent becoming the domain expert by building the
+system. He has built and run the same production SaaS for fifteen years: ninety-five tables,
+most of the features, and all of the support email.
 
 He had been using Claude across a dozen projects while Ken was still refusing to, and he is
 the reason Ken started at all — though not by arguing.
@@ -45,3 +45,20 @@ that were the machine's.
 
 Ken was the skeptic, and had good reasons. That story is
 [here]({{ site.baseurl }}{% post_url 2026-08-20-160-countries %}).
+
+## What we keep finding
+
+Software does not fail according to the model you have of it. It fails according to what it
+actually does.
+
+A map replaced with one that was strictly better on every axis anyone had written down, except
+that the old one's weak keys were what kept the memory down. A build that compiled cleanly and
+then could not resolve a field that was no longer there. An application deployed for two days
+without failing, because nobody had logged into it. A list of every country on Earth, missing
+dozens of them, with no note that it was partial. Migrations that recorded themselves as
+having run, and had not. A deploy its own author believed was better, and could not verify.
+
+That is the thread through all of this, and it is why AI belongs in the story rather than
+being the story. It produces a convincing model of correctness faster than anything else we
+have used — which makes checking that model against what the software actually does the
+entire job.
