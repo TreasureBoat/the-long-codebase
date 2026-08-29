@@ -26,6 +26,21 @@ gh auth status          # confirm the active account
 gh auth switch --user pyu13821
 ```
 
+## Whose words are whose
+
+**Do not edit another author's posts.** Not the prose, and not the reader-facing
+front matter either — `excerpt` and `cta_hook` both render under their byline, so
+writing one is writing in their voice.
+
+The exceptions are mechanical and narrow: a broken link, a leaked HTML comment, a
+site-wide rename. Anything that changes what a reader sees as that author's words
+goes to them.
+
+Standing exception already in place: `excerpt` and `cta_hook` on "160 countries"
+and "Six bugs that never said a word" were written by Paul's session before Ken
+was working in this repo. They are still live and Ken has not explicitly approved
+them. He should either keep or replace them; nobody else should edit them again.
+
 ## Hard rules
 
 **1. No HTML comments in posts.** `<!-- KEN: ... -->` notes shipped to the live page source
