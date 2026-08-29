@@ -4,6 +4,7 @@ title: "The typewriter argument"
 subtitle: "A manual typewriter, three decades of reverse engineering other people's code, and the year I finally turned it on my own"
 date: 2026-08-27 09:00:00 -0400
 author: paul
+series: modernization
 description: "I managed engineers who used AI for years without touching it myself. Then a new job removed every excuse, and I turned what I learned on my own fifteen-year-old codebase."
 excerpt: >-
   I managed engineers who used AI for years without once using it myself. Then a new job

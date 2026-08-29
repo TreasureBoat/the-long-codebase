@@ -1,0 +1,16 @@
+# Series definitions. A post joins one with `series: <key>` in its front matter;
+# ordering within a series is by date, so nothing needs renumbering when a post
+# is added or moved.
+#
+# Ken publishes between Paul's instalments, so without this a reader landing on
+# one post has no way to find the rest of the arc.
+
+modernization:
+  title: "The Modernization"
+  tagline: "A fifteen-year-old codebase, a sole proprietor, and the invoices he stopped sending"
+  author: paul
+  description: >-
+    One person's side product, in production for fifteen years and quietly running out of
+    road. A manual modernization attempt that failed, a second attempt with AI, and the
+    honest accounting of what changed — told one problem at a time, with the parts that
+    went badly left in.

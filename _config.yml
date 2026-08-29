@@ -56,6 +56,7 @@ show_excerpts: true
 # Nav order. Without this minima orders pages however it finds them.
 header_pages:
   - about.md
+  - series.md
   - work.md
 
 # ---------------------------------------------------------------------------

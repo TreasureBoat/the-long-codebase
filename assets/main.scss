@@ -70,3 +70,73 @@
   font-size: .78em;
   color: #9a9a9a;
 }
+
+// ---------------------------------------------------------------------------
+// Series
+// ---------------------------------------------------------------------------
+//
+// Posts by the two authors interleave on the home page, so a reader landing on
+// one instalment needs to see immediately that it belongs to an arc, and needs
+// a way out to the rest of it.
+
+.series-badge {
+  font-size: .8em;
+  color: #828282;
+  margin-top: -.4em;
+  letter-spacing: .02em;
+
+  a { color: #828282; text-decoration: underline; }
+}
+
+.series-nav {
+  margin-top: 2.5em;
+  padding: 1em 1.2em;
+  border-left: 3px solid #e8e8e8;
+  background: #fafafa;
+  font-size: .92em;
+
+  p { margin-bottom: .35em; }
+
+  .series-nav-title {
+    font-weight: 600;
+    color: #424242;
+    margin-bottom: .6em;
+  }
+
+  .series-nav-item span {
+    display: inline-block;
+    min-width: 4.6em;
+    color: #9a9a9a;
+    font-size: .88em;
+  }
+
+  .series-nav-end { color: #9a9a9a; font-style: italic; }
+
+  .series-nav-all {
+    margin-top: .7em;
+    margin-bottom: 0;
+    font-size: .88em;
+  }
+}
+
+.series-tagline {
+  font-style: italic;
+  color: #666;
+  margin-top: -.5em;
+}
+
+.series-list {
+  li { margin-bottom: .8em; }
+
+  .series-list-date {
+    display: block;
+    font-size: .82em;
+    color: #9a9a9a;
+  }
+
+  .series-list-sub {
+    display: block;
+    font-size: .9em;
+    color: #666;
+  }
+}

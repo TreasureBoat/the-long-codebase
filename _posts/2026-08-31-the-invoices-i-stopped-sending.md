@@ -3,6 +3,7 @@ layout: post
 title: "The invoices I stopped sending"
 subtitle: "I shipped a version I knew was not finished, and then I could not bill for it"
 author: paul
+series: modernization
 excerpt: >-
   Nobody complained. Nobody would have known. I had spent a spring and a summer rewriting
   every UI component in a fifteen-year-old product by hand, run out of road, and deployed it

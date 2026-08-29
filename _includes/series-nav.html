@@ -1,0 +1,51 @@
+{%- comment -%}
+  Series navigation. Rendered by _layouts/post.html for any post with `series` set.
+  `position` picks the variant: "header" for the small line under the byline,
+  "footer" for the previous/next block at the end.
+
+  Ordering is by date rather than an explicit part number, so adding or reordering
+  posts never means renumbering the others.
+{%- endcomment -%}
+
+{%- assign meta = site.data.series[page.series] -%}
+{%- if meta -%}
+  {%- assign items = site.posts | where: "series", page.series | sort: "date" -%}
+  {%- assign idx = 0 -%}
+  {%- for p in items -%}
+    {%- if p.url == page.url -%}{%- assign idx = forloop.index -%}{%- endif -%}
+  {%- endfor -%}
+
+  {%- if include.position == "header" -%}
+    <p class="series-badge">
+      Part {{ idx }} of <a href="{{ '/series/' | relative_url }}#{{ page.series }}">{{ meta.title }}</a>
+    </p>
+
+  {%- else -%}
+    {%- assign prev_i = idx | minus: 2 -%}
+    {%- assign next_i = idx -%}
+    {%- assign prev = items[prev_i] -%}
+    {%- assign next = items[next_i] -%}
+    <nav class="series-nav">
+      <p class="series-nav-title">
+        {{ meta.title }} — part {{ idx }} of {{ items.size }}
+      </p>
+      {%- if prev and idx > 1 %}
+      <p class="series-nav-item">
+        <span>Previous</span> <a href="{{ prev.url | relative_url }}">{{ prev.title }}</a>
+      </p>
+      {%- endif %}
+      {%- if next %}
+      <p class="series-nav-item">
+        <span>Next</span> <a href="{{ next.url | relative_url }}">{{ next.title }}</a>
+      </p>
+      {%- else %}
+      <p class="series-nav-item series-nav-end">
+        This is the most recent part. The rest is being written.
+      </p>
+      {%- endif %}
+      <p class="series-nav-all">
+        <a href="{{ '/series/' | relative_url }}#{{ page.series }}">All parts</a>
+      </p>
+    </nav>
+  {%- endif -%}
+{%- endif -%}

@@ -21,6 +21,10 @@ layout: default
       {%- endif -%}
     </p>
 
+    {%- if page.series -%}
+      {%- include series-nav.html position="header" -%}
+    {%- endif -%}
+
     {%- if author and author.role -%}
       <p class="post-byline-role">{{ author.role }}</p>
     {%- endif -%}
@@ -29,6 +33,10 @@ layout: default
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
+
+  {%- if page.series -%}
+    {%- include series-nav.html position="footer" -%}
+  {%- endif -%}
 
   {%- include cta.html -%}
 
