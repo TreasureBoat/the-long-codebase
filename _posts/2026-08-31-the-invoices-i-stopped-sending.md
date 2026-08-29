@@ -97,6 +97,12 @@ it by hand, in evenings and weekends, on a fifteen-year-old codebase with no reg
 Ken started in June 2023. I joined him in September 2024 — fifteen months later, which tells
 you most of what you need to know about how much of my evenings the day job was taking.
 
+I never put anyone else on it, for two reasons. The first is arithmetic: six districts does
+not pay for a development team, and it does not come close. The second is less comfortable.
+I did not trust anyone else with it — fifteen years of my own decisions, including the ones
+I regret, and the only two people I would have let near it were the man who wrote the
+framework and me.
+
 I went back through the commit history to write this, and it is not the story I remembered.
 I remembered a hard spring and summer. What actually happened is that Ken worked through the
 second half of 2023, then nothing at all for three quarters — not one component between
