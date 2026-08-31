@@ -47,7 +47,7 @@ That is the kind of software most software actually is.
 I have never done it full-time. This was a work of passion and a desire to help school
 administrators get some time back. There has always been a day job. Most small software
 products are somebody's second job, and that sets the budget for everything else: the
-product got evenings and weekends, after the day job had taken the best hours.
+product got whatever the day job left, in whatever gaps I could find.
 
 For years that was enough, because I was not doing all of it. I had a partner doing sales
 and the product was good enough.
@@ -92,7 +92,7 @@ tables. Aligning with the new design patterns meant building a new component for
 — 165 of them, each an HTML template and the Java class behind it, 330 files. We did not
 delete the old ones. The new UI went on top and the old components stayed underneath, so that
 if we ran out of time we could still ship the old application without a large change. All of
-it by hand, in evenings and weekends, on a fifteen-year-old codebase with no regression tests.
+it by hand, in snatched hours, on a fifteen-year-old codebase with no regression tests.
 
 Ken started in June 2023. I joined him in September 2024 — fifteen months later, which tells
 you most of what you need to know about how much of my evenings the day job was taking.
