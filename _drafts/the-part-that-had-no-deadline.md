@@ -49,16 +49,28 @@ then diverge in UI behaviour, with formal diverging most. Fifteen years of that 
 exactly the kind of object model you would expect: shared where somebody had noticed, copied
 where nobody had.
 
-He converted them. As far as I can tell they were converted correctly.
+He converted them. I reviewed his work, and later my own, and as far as I could tell it was
+correct.
 
-I say "as far as I can tell" deliberately, because that is the whole problem. There was no
-QA. There was no subject matter expert. There was one person on earth who could look at a
-converted observation screen and know whether it still did what a formal observation is
-required to do, and that person was me, and I was busy.
+That last clause is carrying more weight than it looks. I did review. What I could not do
+was review all of it, in the same way each time, and then do it again after the next change.
+One person clicking through screens on a weeknight is sampling. It is not coverage, and it
+is not repeatable — so whatever I confirmed in the autumn told me nothing about what was
+still true in the spring.
 
-[[ASK Ken — this is your fifteen months and I cannot write it. What did the work look like?
-What was hardest about the three subtypes? Did you know nobody was checking behind you, and
-did that change how you worked?]]
+There was also nobody to ask. No QA, and no subject matter expert other than me: one person
+who could look at a converted formal observation and know whether it still did what a formal
+observation is legally required to do in that district's state. I was that person, I was
+reviewing my own work as well as his, and I was busy.
+
+I cannot tell you what those fifteen months were like for him. I was not there for them, and
+I have never asked.
+
+That is not an omission in this post. It is the same gap as everything else in it. I arrived
+fifteen months late, adopted his patterns, and did not ask why they were the way they were —
+and I have still never asked whether he knew, at eleven at night in Tokyo, that the only
+person who would check what he had just written was going to do it in gaps, from memory, and
+not twice.
 
 ## The quarter where a district came and went
 
@@ -96,8 +108,25 @@ I did not do that. I coded around the gap and kept moving.
 That sentence is the honest centre of this post. Every developer reading it knows exactly
 what it means and roughly how often they have done it.
 
-[[FACT commit timestamps — of my 29 BA commits, how many were weekends or after 9pm? That
-number replaces the phrase "evenings and weekends", which every reader skims.]]
+I went looking for how many hours this took and found something better, because git
+remembers what nobody does.
+
+Across three years there are forty-eight days on which either of us committed a line of this
+work. Not forty-eight weeks of evenings. Forty-eight days, scattered over thirty-eight
+months.
+
+Ken never worked two days running. Not once — across his twenty-four active days the
+shortest gap between any two of them is two days. The longest unbroken run by either of us
+was three days, in September 2024, and it was mine.
+
+We were also on opposite schedules and opposite sides of the world. Nineteen of Ken's forty
+commits landed after eight in the evening in Tokyo, six of them between midnight and six,
+and his heaviest day of the week was Monday. Not one of my twenty-nine landed after eight.
+Mine are weekdays, spread from seven in the morning to eight at night, because I was not
+keeping evenings for this. I was taking whatever gap appeared.
+
+I had been describing this to myself as evenings and weekends. It was Ken's evenings, and my
+leftovers.
 
 ## What that produced
 
