@@ -63,14 +63,42 @@ who could look at a converted formal observation and know whether it still did w
 observation is legally required to do in that district's state. I was that person, I was
 reviewing my own work as well as his, and I was busy.
 
-I cannot tell you what those fifteen months were like for him. I was not there for them, and
-I have never asked.
+For two years I never asked him what those fifteen months were like. That is the same gap as
+everything else in this post — I arrived late, took his patterns, and did not ask why they
+were the way they were. So for this, I finally asked. In his words:
 
-That is not an omission in this post. It is the same gap as everything else in it. I arrived
-fifteen months late, adopted his patterns, and did not ask why they were the way they were —
-and I have still never asked whether he knew, at eleven at night in Tokyo, that the only
-person who would check what he had just written was going to do it in gaps, from memory, and
-not twice.
+> I had no context at all. I did not know the application, or the domain, or what any of it
+> was supposed to mean to the person using it. So I read each component carefully and drew
+> flowcharts of it until I could follow the flow. That was the only way to understand
+> something nobody was going to explain to me.
+>
+> The override is what made the rest workable. The Java logic stayed on the old code, so I
+> could take one component at a time and put a new UI on it — wrappers, and new UI components
+> underneath — without changing what it did.
+>
+> The JavaScript was the first real obstacle, and it was a coding problem. The old JavaScript
+> and the new JavaScript would not live on the same page. One old AJAX call anywhere and all
+> of the new JavaScript stopped working. So before I could convert anything properly I had to
+> build the pieces again on a newer AJAX layer, just to reach a state where the work was
+> possible at all. That took time and showed nothing. After it was done the rest got easier.
+>
+> The subtypes were a different kind of difficult. With an observation there are so many
+> different ways it can be handled, and to really fix that you read the old code over and over
+> again. That one is not a coding problem, and being careful does not finish it.
+>
+> So yes, I knew. I was relying on your test. I can read code and convert it into new working
+> code — I have been doing that for more than twenty years, and I do not need to know the
+> domain to do it. But there were no tests and no documentation, and only you could do a real
+> test. So I was counting on you for the final one, because you are the one who knows the
+> software.
+
+I did not know that until I asked him for this post.
+
+He spent fifteen months converting the hardest part of a system he did not understand,
+drawing flowcharts to work out what it did, on the understanding that the person who knew
+the domain would check it properly at the end. That was the arrangement and it was a
+reasonable one. The final test he was counting on was me — in gaps, from memory, and not
+twice.
 
 ## The quarter where a district came and went
 
@@ -97,11 +125,14 @@ I did not start from the design. I started from Ken's components, and I followed
 he had established, because that was obviously the fastest way in and because he had already
 solved the hard problems.
 
-The trouble with following a pattern is that you can reproduce it without understanding it.
 There were technical decisions in Ken's work that I did not fully appreciate — not errors on
-his part, things he had reasons for that I had not asked about. Where the pattern did not
-quite fit what I was converting, the correct move was to stop and find out why he had done it
-that way.
+his part, things he had reasons for that I had not asked about.
+
+The AJAX layer is the one I can name now. The old JavaScript and the new could not share a
+page: one old AJAX call anywhere on it and every new component stopped working. Rebuilding
+on a newer layer was not a preference or a tidy-up. It was the precondition for any of the
+conversion functioning at all. From outside it looked like an odd choice, and where it did
+not fit what I was converting, the correct move was to stop and ask why.
 
 I did not do that. I coded around the gap and kept moving.
 
@@ -143,9 +174,18 @@ patterns that were themselves still moving.
 be cleaned by a careful developer. A half-conceived interface cannot — it needs somebody to
 decide what was actually meant, and nobody had time to make that decision.
 
-Everything generally worked. That is the part I keep coming back to. A full development team
-would have cleaned all of it up as a matter of course, and we did not have one, and it all
-shipped.
+Everything generally worked. That is the part I keep coming back to, and for a long time I
+explained it to myself as a missing development team.
+
+Ken thinks that is the wrong diagnosis and I have come round to his version. What was
+missing was not people. It was that this was never anyone's day job. Do this as real day
+work and it moves; do it after everything else and it does not, however many of you there
+are.
+
+He also points out that it was never one job. The framework underneath was still being
+repaired while we converted on top of it — the AJAX work was part of that — so we were
+fixing the foundation and building on it at the same time. Start the same conversion today,
+with the framework and the AJAX already done, and it is a far smaller piece of work.
 
 ## Why the cleanup lost
 
@@ -184,11 +224,13 @@ you cannot tell when it is done.
 
 There were not two roads. There was one, and it was closed.
 
-The road you are supposed to take is more people. A tester who could tell me whether a
-converted formal observation still behaved. A second developer. Somebody to finish the UX
-decisions nobody had time to make. I have costed that more than once in fifteen years. Six
-districts has never paid for it and was never going to — and the money was only half of it,
-because even with the money I would not have handed this codebase to someone I did not know.
+The road you are supposed to take is to make it somebody's job. Not a tester on the side and
+not a second pair of evenings — someone for whom this work is the day rather than the thing
+after the day.
+
+That costs money. I have costed it more than once in fifteen years, and six districts has
+never paid for it and was never going to. And the money was only half of it, because even
+with the money I would not have handed this codebase to someone I did not know.
 
 The other road I did not reject. I did not know it was there.
 
