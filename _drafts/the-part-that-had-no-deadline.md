@@ -242,5 +242,10 @@ he refused is [here]({{ site.baseurl }}{% post_url 2026-08-20-160-countries %}).
 
 And then I came back to this codebase, which had been sitting there the whole time.
 
-The next post is about the first thing I did when I got back, which was not writing any new
-code at all.
+The next post in this series is about the first thing I did when I got back, which was not
+writing any new code at all.
+
+I have already written about what those tests turned out to be worth once they existed,
+which is a less comfortable post than this one — [here]({{ site.baseurl }}{% post_url
+2026-09-01-the-tests-were-green-because-nobody-was-clicking %}). But that is getting ahead
+of it.
