@@ -82,6 +82,16 @@ paragraph, which has twice been the wrong thing. `author` must be the **key** fr
 
 **6. American spelling** — skeptic, modernize. It is what the existing text uses.
 
+**7. No customer names.** No district, client, or organization name ever appears in a post,
+and neither do production record identifiers — plan ids, row ids, account names are customer
+data. The site names no employer or client anywhere and this repo is public, so a name in a
+post about a production defect exposes both the customer and the engagement. Describe the
+mechanism instead: "a district's real data", "one production tenant", "plan A / B / C".
+
+**Numbers and measurements stay.** Genericizing is not softening. 9,082 records, 72.5 seconds
+and 118 / 0 / 118 all survive intact — it is only the names that go. Grep a draft for known
+district and client names before moving it out of `_drafts/`.
+
 ## The editorial rule
 
 The skepticism is the asset. These posts earn attention by being candid about failure,

@@ -50,8 +50,12 @@ Work through all ten. For each, cite line numbers and quote the text.
 **1. Vendor-drift check.** Apply the rule above. This is a veto, not a suggestion — a post
 that reads as promotional is not publishable regardless of how good the rest is.
 
-**2. Specificity.** Every claim should be anchored to a count, a duration, a name, a file,
-or a version. This blog is unusually strong here (204,820 order lines; 84 characters down
+**2. Specificity.** Every claim should be anchored to a count, a duration, a file, a class
+or method name, or a version. **Never a customer name.** Hard rule 7 in `CLAUDE.md` forbids
+district, client and organization names and production record identifiers in posts, so a
+draft that reads as deliberately generic about *who* is complying, not under-specified —
+do not propose restoring that detail. Push for the number instead; it is always available
+and it is the part that carries the claim. This blog is unusually strong here (204,820 order lines; 84 characters down
 to 48; 223 policies and 9 roles; three minutes from a fresh dump; seven runs). Protect
 that standard. Flag every unanchored claim and propose the number that would fix it, or
 mark it as a question for the author if only they can supply it.
