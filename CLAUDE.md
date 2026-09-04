@@ -82,6 +82,12 @@ paragraph, which has twice been the wrong thing. `author` must be the **key** fr
 
 **6. American spelling** — skeptic, modernize. It is what the existing text uses.
 
+**6a. The site renders dates in `Asia/Tokyo`** (`timezone:` in `_config.yml`), so a US Eastern
+timestamp of 11:00 or later lands on the *next* day's URL. A post dated `2026-09-04 12:00:00
+-0400` published at `/2026/09/05/`. Use **09:00 -0400 or earlier** from Eastern; from `+0900`
+any normal working time is fine. The URL is generated from the rendered date, not the filename,
+so this is a wrong link rather than a visible error.
+
 **7. No customer names.** No district, client, or organization name ever appears in a post,
 and neither do production record identifiers — plan ids, row ids, account names are customer
 data. The site names no employer or client anywhere and this repo is public, so a name in a

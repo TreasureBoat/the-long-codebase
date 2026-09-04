@@ -2,7 +2,7 @@
 layout: post
 title: "The token count measures your codebase, not your work"
 subtitle: "5.1 billion tokens across sixteen working days, 0.11% of it output. By that measure it was the most effective I have ever been. The most valuable thing it bought was a colleague changing his mind, which appears on no dashboard anywhere."
-date: 2026-09-04 12:00:00 -0400
+date: 2026-09-04 09:00:00 -0400
 author: paul
 excerpt: >-
   Token usage is the easiest number to collect about AI-assisted development, so it is the one
