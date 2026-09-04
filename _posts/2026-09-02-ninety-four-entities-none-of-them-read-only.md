@@ -269,6 +269,15 @@ and better than mine would have been. It is that direction is a separate job fro
 runs on things that are not in the repository, and somebody has to be accountable for asking
 whether the question is still the right one.
 
+Ken has [the other half of this]({{ site.baseurl }}{% post_url 2026-09-04-finished-and-thrown-away %}),
+and it names something I only gestured at. His team removed jQuery from the framework's AJAX engine
+in a day, competently, and then found the UI skin ships its own copy of jQuery — so the goal had
+never been reachable. His diagnosis is that the rewrite took a day, and *because* it took a day
+nobody asked whether it was achievable: a two-week estimate would have forced the question, and a
+one-day one is cheap enough to just do. Cheap execution changes which questions get asked, and
+feasibility is the first one to go quiet. That is the same shape as five optimizations to a page
+nobody asked should exist.
+
 Which makes the useful prompt something other than "is this right." It will be right. The question
 worth asking is: **what would you have suggested if this codebase were not the only thing you had
 read?**
