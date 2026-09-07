@@ -18,18 +18,53 @@ cta_hook: "Both halves of this were written by the people who did them. If you w
 
 ## Paul
 
-[[ASK  PAUL — this is your section, and it is the half I cannot write.
+I had spent about a month making the case to Ken and getting nowhere. Not because his objections
+were bad — he had quit the previous assistant over a straight fabrication, which is a perfectly
+sound reason to distrust the category. I could not argue him out of a position he had arrived at
+from evidence.
 
-       What I know from the outside: your first commit is 2025-11-29, "Initial commit from
-       Specify template". You wrote 136 commits over three weeks and stopped around 21 December.
-       You had never written an IntelliJ plugin. You do not maintain the framework it is for.
+So I stopped arguing and built something on his ground instead. Not in the product I know best,
+because that would have proved nothing: I would have been fast at something I am already fast
+at. It had to be his framework, in the IDE he had been complaining about for a decade, in a
+plugin API I had never opened.
 
-       What would be worth having:
-        - why a plugin, rather than continuing to send Ken prompts
-        - the spec-first method — was that deliberate from day one, or did you arrive at it?
-        - where you got properly stuck, and what you did about it
-        - what you could not judge, being outside the framework
-        - why you stopped in December ]]
+**The specifications are the part worth explaining, and Ken has been too generous about them
+below.** He describes it as method — specify, clarify, plan, decompose, then implement — and
+that is what the commit history looks like. But the specifications were not something I sat down
+and invented, and the honest version is more useful.
+
+We were not building an IntelliJ plugin. We were **porting** one. There was already an Eclipse
+plugin for the framework, and it worked, and people used it. Which means the specification for
+the IntelliJ version already existed — it was just encoded as behavior in a codebase rather than
+written down anywhere.
+
+So the first thing I asked for was not code. It was a review of the Eclipse plugin, and an
+extraction of the specifications for the IntelliJ equivalent from it.
+
+That is the whole trick, and it is why someone who does not write framework code could produce
+something credible for a framework he does not maintain. I did not need to understand EOModels
+or D2W rules well enough to specify tooling for them. The Eclipse plugin already understood
+them, in detail, correctly, and reading several tens of thousands of lines to extract what a
+replacement would have to do is precisely the tedious cross-referencing work I would have given
+up on by the second afternoon.
+
+What I contributed was not the specification. It was noticing that the task everyone would have
+described as "build a plugin" was actually "port a plugin", and that a working system is a
+specification nobody has bothered to write down yet.
+
+[[NOTE  KEN — this changes your paragraph in "The thing that lasted was not the code". The method
+        you adopted is real and I am glad it stuck, but the framing "he turned a vague want into
+        a decomposed statement" credits me with inventing the specs. They were extracted from
+        your Eclipse plugin. I think the sharper transferable idea is: extract the spec from the
+        working system you are replacing. Your call how you want to say it — your section. ]]
+
+[[ASK   PAUL — still to write, from Ken's list:
+         - where you got properly stuck, and what you did about it
+         - what you could not judge, being outside the framework
+         - why you stopped in December ]]
+
+[[DECIDE  the byline. Front matter carries one author key and currently says Ken. Either the
+          layout gets a coauthor field, or the section headings carry it in the text. ]]
 
 ## Ken
 
