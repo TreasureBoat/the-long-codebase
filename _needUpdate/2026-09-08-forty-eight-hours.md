@@ -18,71 +18,74 @@ cta_hook: "Both halves of this were written by the people who did them. If you w
 
 ## Paul
 
-I had spent about a month making the case to Ken and getting nowhere. Not because his objections
-were bad — he had quit the previous assistant over a straight fabrication, which is a perfectly
-sound reason to distrust the category. I could not argue him out of a position he had arrived at
-from evidence.
-
-So I stopped arguing and built something on his ground instead. Not in the product I know best,
-because that would have proved nothing: I would have been fast at something I am already fast
-at. It had to be his framework, in the IDE he had been complaining about for a decade, in a
-plugin API I had never opened.
-
-**The specifications are the part worth explaining, and Ken has been too generous about them
-below.** He describes it as method — specify, clarify, plan, decompose, then implement — and
-that is what the commit history looks like. But the specifications were not something I sat down
-and invented, and the honest version is more useful.
+Ken's half opens with the forty-eight hours. Here is what was inside them: seven commits, from
+08:21 on 29 November to 16:31 on 30 November. He committed the next day.
 
 We were not building an IntelliJ plugin. We were **porting** one. There was already an Eclipse
-plugin for the framework, and it worked, and people used it. Which means the specification for
-the IntelliJ version already existed — it was just encoded as behavior in a codebase rather than
-written down anywhere.
+plugin for the framework — 1,428 Java files, about 192,000 lines — and it worked, and people used
+it. Which means the specification for the IntelliJ version already existed. It was just encoded
+as behavior in a codebase rather than written down anywhere.
 
 So the first thing I asked for was not code. It was a review of the Eclipse plugin, and an
 extraction of the specifications for the IntelliJ equivalent from it.
 
-That is the whole trick, and it is why someone who does not write framework code could produce
-something credible for a framework he does not maintain. I did not need to understand EOModels
-or D2W rules well enough to specify tooling for them. The Eclipse plugin already understood
-them, in detail, correctly, and reading several tens of thousands of lines to extract what a
-replacement would have to do is precisely the tedious cross-referencing work I would have given
-up on by the second afternoon.
+Concretely, the first file in that repository that does any work is
+`.claude/agents/eclipse-plugin.md`. Eighty-three lines. Its tool access is `Read, Grep, Glob,
+WebSearch, WebFetch` — nothing that can write. Its entire job is to know the Eclipse codebase and
+answer questions about it. It went in on 29 November at 19:45, in the same commit as the first
+line of implementation, and it is still there today.
+
+That is why someone who does not maintain the framework could produce something credible for it.
+I did not need to understand EOModels — the database-to-object mappings TreasureBoat runs on — or
+its D2W rules, which decide what a screen shows without anyone writing the screen, well enough to
+specify tooling for them. The Eclipse plugin already understood them, in detail, correctly, and
+reading 192,000 lines to extract what a replacement would have to do is precisely the tedious
+cross-referencing I would have given up on by the second afternoon.
 
 What I contributed was not the specification. It was noticing that the task everyone would have
-described as "build a plugin" was actually "port a plugin", and that a working system is a
-specification nobody has bothered to write down yet.
-
-[[NOTE  KEN — this changes your paragraph in "The thing that lasted was not the code". The method
-        you adopted is real and I am glad it stuck, but the framing "he turned a vague want into
-        a decomposed statement" credits me with inventing the specs. They were extracted from
-        your Eclipse plugin. I think the sharper transferable idea is: extract the spec from the
-        working system you are replacing. Your call how you want to say it — your section. ]]
+described as "build a plugin" was actually "port a plugin". **A working system is a specification
+nobody has bothered to write down, so before you specify the replacement, spend the first day
+extracting the spec out of the thing you are replacing.** That is the part that transfers, and it
+has nothing to do with this framework or this IDE.
 
 **Where it ran out.** I could get the rough outline of a feature working. I could not get the
 details of a subsystem right, and those are different problems.
 
-The model editor is the clearest case. Extracting the spec from the Eclipse plugin gave me the
-shape of what an EOModel editor has to do — the screens, the operations, the artifacts it reads
-and writes. It did not give me the requirements underneath that: what every field means, which
-combinations are valid, what the framework actually does with them at runtime. Those are not
-recoverable by reading. They are known by people who have lived in the thing.
+Extraction gave me the shape of what an EOModel editor has to do — the screens, the operations,
+the artifacts it reads and writes. It did not give me the requirements underneath: what every
+field means, which combinations are valid, what the framework does with them at runtime. Those
+are not recoverable by reading. They are known by people who have lived in the thing.
 
 I had maintained some of the Eclipse plugin code myself over the years, but that was patching.
 Fixing a defect in a codebase that size teaches you the few hundred lines around the defect. It
-does not teach you the system, and I never had a reason to learn the system because I was a
-consumer of it, not its maintainer.
+does not teach you the system, and I never had reason to learn the system, because I was a
+consumer of it rather than its maintainer.
 
-So when Ken says the prototype had bugs everywhere and no detail finished, that was not time
-pressure or carelessness. That was the ceiling. The extraction gave me a credible outline across
-a lot of surface area, and it could not give me the judgment to know when the details were right,
-because I had no way to check the answers. I could tell you the editor opened. I could not tell
-you it was correct.
+So when Ken says the prototype had bugs everywhere and no detail finished, that was the ceiling,
+not carelessness. On 30 December he had to make complex rule expressions read-only in a class I
+wrote, because the editor was loading them, letting you edit them, and corrupting them on save.
+Nine days later he fixed my plist writer, which had been emitting model files with unquoted keys,
+and my model save, which was dropping a field. All three of those opened. All three looked like
+they worked.
 
-**Why I stopped.** My day job took the evenings back, which is the boring half of the answer. The
-other half is that by then it did not matter. Ken had made more commits in December than I had,
-on his own features, in the parts I could not have finished anyway. The thing I was worried about
-in November — that this would be a demo he politely ignored — was long over. He did not need me
-to keep going, and the parts that were left were exactly the parts he was better placed to do.
+That is the distinction I could not cross: the extraction gave me code that runs, and running is
+not the same as right. I could tell you the editor opened. I could not tell you it was correct,
+because I had no way to check the answers.
+
+**Why I stopped.** My day job took the evenings back, which is the boring half. The other half is
+that by then it did not matter. Ken had made more commits in December than I had, on his own
+features, in the parts I could not have finished anyway. The thing I was worried about in
+November — that this would be a demo he politely ignored — was long over.
+
+[[NOTE  KEN — this changes your paragraph in "The thing that lasted was not the code". The method
+        you adopted is real, but the framing credits me with inventing the specs. They were
+        extracted from your Eclipse plugin. Two counts in that section also need re-running
+        before publish — see the note I sent you. ]]
+
+[[ASK   PAUL — was there uncommitted work before 29 November, and how long? "160 countries" is
+        published saying "about two weeks building a prototype". The repository only sees
+        thirty-two hours. If there were two weeks of unpushed work, say so here in one sentence.
+        If not, the published post needs a correction. ]]
 
 [[DECIDE  the byline. Front matter carries one author key and currently says Ken. Either the
           layout gets a coauthor field, or the section headings carry it in the text. ]]
