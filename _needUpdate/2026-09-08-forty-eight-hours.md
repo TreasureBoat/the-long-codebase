@@ -18,27 +18,27 @@ cta_hook: "Both halves of this were written by the people who did them. If you w
 
 ## Paul
 
-I had spent about a month making the case to Ken without much progress, and I want to be fair
-about why. He was not stonewalling. He had used Copilot, it had handed him a plausible and wrong
-answer, and he had drawn a reasonable conclusion from his own evidence. He tells that story
-below. Mine is not an argument I could win by making it again more loudly.
+I had spent about a month telling Ken what I was getting out of Claude, without much progress,
+and I want to be fair about why. He was not stonewalling. He had used Copilot, it had handed him
+a plausible and wrong answer, and he had drawn a reasonable conclusion from his own evidence. He
+tells that story below. It was not an argument I was going to win by making it again more loudly.
 
-So I stopped arguing and built on his ground instead. Ken's half opens with the forty-eight
-hours. Here is what was inside them: seven commits, from 08:21 on Saturday 29 November to 16:31
-on the Sunday. He committed on the Monday.
+What broke it was not my persistence. It was that he challenged me to build the first module of
+an IntelliJ plugin for his framework.
+
+That is a good challenge, and I want to give him credit for it rather than take it. It put the
+claim somewhere it could be checked, on ground he owned and I did not, at a size where failure
+would have been obvious and quick. If I could not do it, there would have been nothing more to
+discuss.
+
+It took me that weekend to get it started. Ken's half opens with the forty-eight hours; here is
+what was inside them: seven commits, from 08:21 on Saturday 29 November to 16:31 on the Sunday.
+He committed on the Monday.
 
 That weekend was the initial prototype, and it is only the first part. I kept going through
-December, prototyping other components — 129 commits by the time I stopped on the 21st.
-
-The commit metadata records something I had half forgotten until I looked. Every one of my
-commits that month carries a `-0500` offset except twelve, on 4 December, which carry `-0700`. I
-was in Boulder for the day job that week, and those twelve run from 01:24 to 07:07 Mountain time,
-in a hotel, before a working day. Project templates, click-through navigation, a spec for D2W
-rule files. That was the night it stopped being an argument I was making to Ken and became
-something I believed myself.
-
-The weekend got his attention. December convinced him, and the measure of that is not anything I
-said: he went from the free plan to Pro to Max inside those few weeks.
+December, prototyping other components — 129 commits by the time I stopped on the 21st. The
+weekend answered his challenge. December is what actually convinced him, and the measure of that
+is not anything I said: he went from the free plan to Pro to Max inside those few weeks.
 
 We were not building an IntelliJ plugin. We were **porting** one. There was already an Eclipse
 plugin for the framework — 1,428 Java files, about 192,000 lines — and it worked, and people used
@@ -122,7 +122,12 @@ November — that this would be a demo he politely ignored — was long over.
         needs correcting in the published post.
 
         (2) I have said you went free -> Pro -> Max in December. That is your spending and your
-        story, so cut it if you would rather not have it on the page. ]]
+        story, so cut it if you would rather not have it on the page.
+
+        (3) Bigger one: I have written that YOU challenged me to build the first plugin module.
+        Your subtitle and opening currently read as though I started it unprompted, which makes
+        the whole thing more surprising than it was and gives me credit that belongs to you. If
+        my memory matches yours, your half probably wants to say so. ]]
 
 [[DECIDE  the byline. Front matter carries one author key and currently says Ken. Either the
           layout gets a coauthor field, or the section headings carry it in the text. ]]
