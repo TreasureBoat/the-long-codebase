@@ -106,13 +106,10 @@ that by then it did not matter. Ken had made more commits in December than I had
 features, in the parts I could not have finished anyway. The thing I was worried about in
 November — that this would be a demo he politely ignored — was long over.
 
-[[NOTE  KEN — one correction and one flag for "The thing that lasted was not the code".
-        The correction: the framing credits me with inventing the specs, and they were extracted
-        from your Eclipse plugin. The flag: the two counts in that section both run backwards
-        against the repo — 145 of the 207 spec files were created by me, and about a third of
-        src/main/java still blames to me. I am NOT asking you to credit me with more; I am fine
-        with the code being disposable and have said so above. But both numbers are checkable by
-        anyone you show the repo to, so they are worth re-running before publish. ]]
+[[NOTE  KEN — one correction for "The thing that lasted was not the code": the framing credits
+        me with inventing the specs, and they were extracted from your Eclipse plugin. The method
+        you kept is real and I am glad it stuck — I just did not invent it from nothing.
+        No argument from me about the code not surviving. ]]
 
 [[NOTE  KEN — two things for you to check in this section, both about your own facts.
 
