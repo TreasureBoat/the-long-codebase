@@ -18,13 +18,20 @@ cta_hook: "Both halves of this were written by the people who did them. If you w
 
 ## Paul
 
-I had spent about a month making the case to Ken and getting nowhere. He will tell you why below,
-and it is his story to tell — I only knew that the objections were his own and that I was not
-going to talk him out of them.
+I had spent about a month making the case to Ken without much progress, and I want to be fair
+about why. He was not stonewalling. He had used Copilot, it had handed him a plausible and wrong
+answer, and he had drawn a reasonable conclusion from his own evidence. He tells that story
+below. Mine is not an argument I could win by making it again more loudly.
 
-So I stopped arguing and built something on his ground instead. Ken's half opens with the
-forty-eight hours. Here is what was inside them: seven commits, from 08:21 on 29 November to
-16:31 on 30 November. He committed the next day.
+So I stopped arguing and built on his ground instead. Ken's half opens with the forty-eight
+hours. Here is what was inside them: seven commits over the Thanksgiving weekend, from 08:21 on
+Saturday 29 November to 16:31 on the Sunday. He committed on the Monday.
+
+That weekend was the initial prototype, and it is only the first part. I kept going through
+December, prototyping other components of the plugin — 129 commits by the time I stopped on the
+21st. The weekend is what got his attention. December is what actually convinced him, and the
+measure of it is not something I said: he moved from the free plan to Pro to Max inside those
+few weeks.
 
 We were not building an IntelliJ plugin. We were **porting** one. There was already an Eclipse
 plugin for the framework — 1,428 Java files, about 192,000 lines — and it worked, and people used
@@ -100,10 +107,15 @@ November — that this would be a demo he politely ignored — was long over.
         with the code being disposable and have said so above. But both numbers are checkable by
         anyone you show the repo to, so they are worth re-running before publish. ]]
 
-[[ASK   PAUL — was there uncommitted work before 29 November, and how long? "160 countries" is
-        published saying "about two weeks building a prototype". The repository only sees
-        thirty-two hours. If there were two weeks of unpushed work, say so here in one sentence.
-        If not, the published post needs a correction. ]]
+[[NOTE  KEN — two things for you to check in this section, both about your own facts.
+
+        (1) The "about two weeks" in "160 countries" and the "forty-eight hours" in this title
+        are not in conflict, and the section above now separates them: the weekend was the
+        initial prototype, December was the rest of the prototyping. Nothing needs correcting in
+        the published post, but this post should not leave the two numbers looking contradictory.
+
+        (2) I have said you went free -> Pro -> Max in December. That is your spending and your
+        story, so cut it if you would rather not have it on the page. ]]
 
 [[DECIDE  the byline. Front matter carries one author key and currently says Ken. Either the
           layout gets a coauthor field, or the section headings carry it in the text. ]]
