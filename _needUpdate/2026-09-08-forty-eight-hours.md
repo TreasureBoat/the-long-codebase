@@ -18,8 +18,13 @@ cta_hook: "Both halves of this were written by the people who did them. If you w
 
 ## Paul
 
-Ken's half opens with the forty-eight hours. Here is what was inside them: seven commits, from
-08:21 on 29 November to 16:31 on 30 November. He committed the next day.
+I had spent about a month making the case to Ken and getting nowhere. He will tell you why below,
+and it is his story to tell — I only knew that the objections were his own and that I was not
+going to talk him out of them.
+
+So I stopped arguing and built something on his ground instead. Ken's half opens with the
+forty-eight hours. Here is what was inside them: seven commits, from 08:21 on 29 November to
+16:31 on 30 November. He committed the next day.
 
 We were not building an IntelliJ plugin. We were **porting** one. There was already an Eclipse
 plugin for the framework — 1,428 Java files, about 192,000 lines — and it worked, and people used
@@ -72,15 +77,28 @@ That is the distinction I could not cross: the extraction gave me code that runs
 not the same as right. I could tell you the editor opened. I could not tell you it was correct,
 because I had no way to check the answers.
 
+**What the prototype was for.** Ken says below that almost none of my original code survives, and
+I have no argument with that as a description of what a prototype is for. It was never meant to
+last. It was meant to answer one question — is this road passable — for one person who did not
+believe it was.
+
+That is the part I would defend, and it is not a coding achievement. Changing the mind of a
+competent skeptic who had arrived at his position from evidence is hard, and arguing does not do
+it. A half-working thing in his own territory did, in two days. Whether the lines survived nine
+months is beside the point; they had already done their job by 1 December.
+
 **Why I stopped.** My day job took the evenings back, which is the boring half. The other half is
 that by then it did not matter. Ken had made more commits in December than I had, on his own
 features, in the parts I could not have finished anyway. The thing I was worried about in
 November — that this would be a demo he politely ignored — was long over.
 
-[[NOTE  KEN — this changes your paragraph in "The thing that lasted was not the code". The method
-        you adopted is real, but the framing credits me with inventing the specs. They were
-        extracted from your Eclipse plugin. Two counts in that section also need re-running
-        before publish — see the note I sent you. ]]
+[[NOTE  KEN — one correction and one flag for "The thing that lasted was not the code".
+        The correction: the framing credits me with inventing the specs, and they were extracted
+        from your Eclipse plugin. The flag: the two counts in that section both run backwards
+        against the repo — 145 of the 207 spec files were created by me, and about a third of
+        src/main/java still blames to me. I am NOT asking you to credit me with more; I am fine
+        with the code being disposable and have said so above. But both numbers are checkable by
+        anyone you show the repo to, so they are worth re-running before publish. ]]
 
 [[ASK   PAUL — was there uncommitted work before 29 November, and how long? "160 countries" is
         published saying "about two weeks building a prototype". The repository only sees
