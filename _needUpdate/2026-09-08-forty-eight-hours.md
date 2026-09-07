@@ -24,14 +24,21 @@ answer, and he had drawn a reasonable conclusion from his own evidence. He tells
 below. Mine is not an argument I could win by making it again more loudly.
 
 So I stopped arguing and built on his ground instead. Ken's half opens with the forty-eight
-hours. Here is what was inside them: seven commits over the Thanksgiving weekend, from 08:21 on
-Saturday 29 November to 16:31 on the Sunday. He committed on the Monday.
+hours. Here is what was inside them: seven commits, from 08:21 on Saturday 29 November to 16:31
+on the Sunday. He committed on the Monday.
 
 That weekend was the initial prototype, and it is only the first part. I kept going through
-December, prototyping other components of the plugin — 129 commits by the time I stopped on the
-21st. The weekend is what got his attention. December is what actually convinced him, and the
-measure of it is not something I said: he moved from the free plan to Pro to Max inside those
-few weeks.
+December, prototyping other components — 129 commits by the time I stopped on the 21st.
+
+The commit metadata records something I had half forgotten until I looked. Every one of my
+commits that month carries a `-0500` offset except twelve, on 4 December, which carry `-0700`. I
+was in Boulder for the day job that week, and those twelve run from 01:24 to 07:07 Mountain time,
+in a hotel, before a working day. Project templates, click-through navigation, a spec for D2W
+rule files. That was the night it stopped being an argument I was making to Ken and became
+something I believed myself.
+
+The weekend got his attention. December convinced him, and the measure of that is not anything I
+said: he went from the free plan to Pro to Max inside those few weeks.
 
 We were not building an IntelliJ plugin. We were **porting** one. There was already an Eclipse
 plugin for the framework — 1,428 Java files, about 192,000 lines — and it worked, and people used
@@ -110,9 +117,9 @@ November — that this would be a demo he politely ignored — was long over.
 [[NOTE  KEN — two things for you to check in this section, both about your own facts.
 
         (1) The "about two weeks" in "160 countries" and the "forty-eight hours" in this title
-        are not in conflict, and the section above now separates them: the weekend was the
-        initial prototype, December was the rest of the prototyping. Nothing needs correcting in
-        the published post, but this post should not leave the two numbers looking contradictory.
+        are not in conflict, and the section above now separates them: the weekend of 29-30
+        November was the initial prototype, December was the rest of the prototyping. Nothing
+        needs correcting in the published post.
 
         (2) I have said you went free -> Pro -> Max in December. That is your spending and your
         story, so cut it if you would rather not have it on the page. ]]
