@@ -58,10 +58,31 @@ specification nobody has bothered to write down yet.
         your Eclipse plugin. I think the sharper transferable idea is: extract the spec from the
         working system you are replacing. Your call how you want to say it — your section. ]]
 
-[[ASK   PAUL — still to write, from Ken's list:
-         - where you got properly stuck, and what you did about it
-         - what you could not judge, being outside the framework
-         - why you stopped in December ]]
+**Where it ran out.** I could get the rough outline of a feature working. I could not get the
+details of a subsystem right, and those are different problems.
+
+The model editor is the clearest case. Extracting the spec from the Eclipse plugin gave me the
+shape of what an EOModel editor has to do — the screens, the operations, the artifacts it reads
+and writes. It did not give me the requirements underneath that: what every field means, which
+combinations are valid, what the framework actually does with them at runtime. Those are not
+recoverable by reading. They are known by people who have lived in the thing.
+
+I had maintained some of the Eclipse plugin code myself over the years, but that was patching.
+Fixing a defect in a codebase that size teaches you the few hundred lines around the defect. It
+does not teach you the system, and I never had a reason to learn the system because I was a
+consumer of it, not its maintainer.
+
+So when Ken says the prototype had bugs everywhere and no detail finished, that was not time
+pressure or carelessness. That was the ceiling. The extraction gave me a credible outline across
+a lot of surface area, and it could not give me the judgment to know when the details were right,
+because I had no way to check the answers. I could tell you the editor opened. I could not tell
+you it was correct.
+
+**Why I stopped.** My day job took the evenings back, which is the boring half of the answer. The
+other half is that by then it did not matter. Ken had made more commits in December than I had,
+on his own features, in the parts I could not have finished anyway. The thing I was worried about
+in November — that this would be a demo he politely ignored — was long over. He did not need me
+to keep going, and the parts that were left were exactly the parts he was better placed to do.
 
 [[DECIDE  the byline. Front matter carries one author key and currently says Ken. Either the
           layout gets a coauthor field, or the section headings carry it in the text. ]]
