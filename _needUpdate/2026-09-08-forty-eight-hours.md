@@ -213,15 +213,8 @@ company, the same country, or the same time zone.
 
 Almost none of Paul's original code survives. That is not a criticism — it was a prototype, and
 prototypes are meant to be replaced. Nine months on, the plugin is 571 Java files, about 135,000
-lines, 544 tests, and 28 separate feature areas: model editors, rule editors, component editors,
+lines, 490 tests across 63 test classes, and 28 separate feature areas: model editors, rule editors, component editors,
 a deploy tool, a localization editor, code generation.
-
-[[FACT  File count and lines are measured and current (571 files, 134,990 lines across all Java;
-        504 files and 124,548 lines if you count only src/main — say which you mean). The 544
-        tests I could not reproduce: I count 490 @Test methods. If 544 comes off a test report,
-        parameterized cases would explain the gap — but the number needs a source. Same for the
-        207 spec files: 224 files match *spec*, and specs/ holds 34, so it depends what you are
-        counting. Worth noting 207 is also exactly your December commit count. ]]
 
 What survived is his **method**, and I did not notice I had adopted it until I went looking at
 the history for this post.
@@ -286,7 +279,20 @@ smaller size than it arrived in.
 
 ## What nine months of it looks like
 
-Not a straight line, and I want to record the two least glamorous parts.
+The first working prototype was fast. That part is real, and it is the part everybody sees when
+they try this — it is genuinely surprising the first time it happens.
+
+Then there is everything else. Every button, every checkbox, every field that has to do the right
+thing when somebody types the wrong thing into it. That is where nine months went, and it did not
+compress the way the prototype did. Paul found the edge of it in three weeks and called it the
+ceiling. The difference between us is only that I have been living on the far side of that line
+ever since, and the work over here is slow in a way the first weekend gives you no reason to
+expect.
+
+I would still do it this way. But anyone reading the first half of this post and planning their
+own weekend should know that the weekend is not the project.
+
+Not a straight line either, and I want to record the two least glamorous parts.
 
 **The plugin was rejected by the marketplace.** Not for quality — for using internal platform
 APIs, the kind that work today and break on some future IDE release. Perfectly fair, and it took
@@ -318,13 +324,3 @@ plugin that now edits its models was started by someone who does not write frame
 a tool I had refused to use, and I joined two days later.
 
 I would not have predicted any part of that sentence a year ago.
-
-[[ASK  KEN — one left. Do you want the line-count figure in at all? It is accurate and current
-       (571 files, about 135,000 lines) but it invites "lines of code" arguments, and the post
-       does not need it: files, tests and 28 feature areas already carry the scale. Cut the
-       number and nothing else changes.
-
-       Settled: the marketplace is named and linked — it has been live since 30 August, so the
-       "still in the review queue" line was false and is gone. The listing is public and our own
-       install pages already link it, so naming it discloses nothing. The repository stays
-       unlinked because it is private. The download count is deliberately absent. ]]
