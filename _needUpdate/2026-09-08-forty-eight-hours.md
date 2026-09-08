@@ -4,6 +4,7 @@ title: "Forty-eight hours"
 subtitle: "A product manager who does not write framework code started an IDE plugin for my framework. I made my first commit to it two days later, and I have not stopped since"
 date: 2026-09-08 09:00:00 +0900
 author: ken
+coauthor: paul
 description: "Paul started a plugin for a framework he does not maintain, in a plugin API he had never used. Two days later I joined. Nine months on it is 571 files and 135,000 lines, and the thing that lasted was not the code."
 excerpt: >-
   Paul's first commit is dated 29 November. Mine is dated 1 December. I had spent a month
@@ -11,10 +12,6 @@ excerpt: >-
   committing to it.
 cta_hook: "Both halves of this were written by the people who did them. If you want the same on your own stack, that is the work we take on."
 ---
-
-[[NOTE  Joint post. Paul writes the first section, I write the rest. Front matter only takes one
-        author key, so the byline currently says Ken — either add a coauthor field to the layout
-        or make it explicit in the text. DECIDE which. ]]
 
 ## Paul
 
@@ -139,9 +136,6 @@ November — that this would be a demo he politely ignored — was long over.
         Two numbers in your section while you are in there: the Eclipse plugin is 1,384 Java files
         and about 187,000 lines, not 1,428 and 192,000. And December was 131 commits for you, 130
         of them by the 21st, not 129. ]]
-
-[[DECIDE  the byline. Front matter carries one author key and currently says Ken. Either the
-          layout gets a coauthor field, or the section headings carry it in the text. ]]
 
 ## Ken
 

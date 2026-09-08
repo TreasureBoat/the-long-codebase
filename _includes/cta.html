@@ -10,7 +10,7 @@
     cta: false        omit it entirely
 
   The contact address is the post author's, from _data/authors.yml, so a reply goes to
-  whoever wrote the thing the reader just finished.
+  whoever wrote the thing the reader just finished. A post with `coauthor:` shows both.
     cta_hook: "..."   one sentence specific to this post, shown above the standing text
 {%- endcomment -%}
 
@@ -35,8 +35,13 @@
 
   {%- assign cta_author = site.data.authors[page.author] -%}
   {%- assign cta_email = cta_author.email | default: site.email -%}
+  {%- assign cta_coauthor = site.data.authors[page.coauthor] -%}
   <p class="cta-contact">
     <a href="mailto:{{ cta_email }}">{{ cta_email }}</a>
+    {%- if cta_coauthor and cta_coauthor.email %}
+    &middot;
+    <a href="mailto:{{ cta_coauthor.email }}">{{ cta_coauthor.email }}</a>
+    {%- endif %}
     &middot;
     <a href="{{ '/feed.xml' | relative_url }}">follow the series</a>
   </p>
