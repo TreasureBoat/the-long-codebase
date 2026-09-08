@@ -277,8 +277,9 @@ Not a straight line, and I want to record the two least glamorous parts.
 
 **The plugin was rejected by the marketplace.** Not for quality — for using internal platform
 APIs, the kind that work today and break on some future IDE release. Perfectly fair, and it took
-a cleanup pass across a dozen usages to clear. The submission after that has now been sitting in
-the review queue for weeks, which is its own lesson about shipping into somebody else's process.
+a cleanup pass across a dozen usages to clear. The resubmission went through, and it has been
+[live on the JetBrains Marketplace](https://plugins.jetbrains.com/plugin/33292-treasureboat-coding-tools)
+since 30 August.
 
 **The test suite was dead for two months and reported nothing.** A build tool upgrade quietly
 dropped an implicit dependency, and without it the test task failed *before running a single
@@ -295,13 +296,9 @@ check that first — and treat two months of silence as the alarming thing it is
 
 ## Where it is now
 
-Version 1.2.7 shipped yesterday, fixing three small things, one of which was an empty file
-producing a stack trace instead of an editor.
-
-[[FACT  This does not match the repository. build-info.properties says plugin.version = 1.2.8,
-        git.hash = v1.2.7-3-g01e9c5d, build.time 2026-09-01. So 1.2.7 is the last tag, we are
-        three commits past it, and the build is a week old rather than yesterday's. Say what
-        actually shipped and when. ]]
+Version 1.2.7 is what the marketplace serves — tagged on 27 August, published on the 30th. It
+fixed three small things, one of which was an empty file producing a stack trace instead of an
+editor.
 
 The framework it supports is one I rebuilt by hand because its original was discontinued. The
 plugin that now edits its models was started by someone who does not write framework code, using
