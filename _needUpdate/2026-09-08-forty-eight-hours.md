@@ -103,26 +103,6 @@ that by then it did not matter. Ken had made more commits in December than I had
 features, in the parts I could not have finished anyway. The thing I was worried about in
 November — that this would be a demo he politely ignored — was long over.
 
-[[NOTE  KEN — one correction for "The thing that lasted was not the code": the framing credits
-        me with inventing the specs, and they were extracted from your Eclipse plugin. The method
-        you kept is real and I am glad it stuck — I just did not invent it from nothing.
-        No argument from me about the code not surviving. ]]
-
-[[NOTE  KEN — two things for you to check in this section, both about your own facts.
-
-        (1) The "about two weeks" in "160 countries" and the "forty-eight hours" in this title
-        are not in conflict, and the section above now separates them: the weekend of 29-30
-        November was the initial prototype, December was the rest of the prototyping. Nothing
-        needs correcting in the published post.
-
-        (2) I have said you went free -> Pro -> Max in December. That is your spending and your
-        story, so cut it if you would rather not have it on the page.
-
-        (3) Bigger one: I have written that YOU challenged me to build the first plugin module.
-        Your subtitle and opening currently read as though I started it unprompted, which makes
-        the whole thing more surprising than it was and gives me credit that belongs to you. If
-        my memory matches yours, your half probably wants to say so. ]]
-
 [[NOTE  PAUL — (3) does not match my memory, and it goes the other way. I did not challenge you.
         You decided to build a prototype and you decided to start from the Eclipse plugin, and I
         did not know you were doing either until I saw it. So the subtitle stands.
@@ -132,6 +112,12 @@ November — that this would be a demo he politely ignored — was long over.
         would have to do, before writing a line. The only word I would change is "challenge",
         because I never issued one. My half now says what the month before was actually like,
         which I think was the part missing from both our sections.
+
+        Your other two notes are done rather than pending: the specs correction is in "The thing
+        that lasted was not the code" — you extracted them from the Eclipse plugin and the idea
+        you contributed was noticing the old plugin WAS the specification — and the free/Pro/Max
+        line stays, with the timing added on my side, because it is the best evidence in the post
+        and it is mine to give.
 
         Two numbers in your section while you are in there: the Eclipse plugin is 1,384 Java files
         and about 187,000 lines, not 1,428 and 192,000. And December was 131 commits for you, 130
@@ -188,6 +174,14 @@ in a couple of weeks, in the evenings.
 
 The argument I had been ignoring for a month was "this tool is good". The thing that landed was
 a working artifact that existed and should not have.
+
+Paul mentions above that I went from the free plan to Pro to Max in those few weeks. The timing
+is the part worth having. Free lasted about three days — against work this heavy it did not last
+five minutes in a sitting. Pro lasted maybe two weeks. I have been on Max since and I am happy
+there.
+
+A month before that I would not have spent anything on this at all. That is the measure of what
+the prototype did, and it is a better one than anything I could say about it.
 
 ## Not a handover
 
@@ -306,7 +300,12 @@ a tool I had refused to use, and I joined two days later.
 
 I would not have predicted any part of that sentence a year ago.
 
-[[ASK  KEN — worth deciding:
-        - is naming the marketplace and the review wait fine, or too pointed?
-        - do you want the 122,000-line figure in? It is accurate but invites "lines of code" arguments
-        - should we link the plugin itself, or is it not public enough yet? ]]
+[[ASK  KEN — one left. Do you want the line-count figure in at all? It is accurate and current
+       (571 files, about 135,000 lines) but it invites "lines of code" arguments, and the post
+       does not need it: files, tests and 28 feature areas already carry the scale. Cut the
+       number and nothing else changes.
+
+       Settled: the marketplace is named and linked — it has been live since 30 August, so the
+       "still in the review queue" line was false and is gone. The listing is public and our own
+       install pages already link it, so naming it discloses nothing. The repository stays
+       unlinked because it is private. The download count is deliberately absent. ]]
