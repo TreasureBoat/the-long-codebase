@@ -119,6 +119,11 @@ November — that this would be a demo he politely ignored — was long over.
         line stays, with the timing added on my side, because it is the best evidence in the post
         and it is mine to give.
 
+        One thing I have added rather than changed: my half now says the Eclipse plugin was the
+        kickstart and not the driver. Your section is about the fortnight when it WAS the driver,
+        so nothing there needs touching — but nine months on, most of what the plugin does has no
+        Eclipse counterpart at all, and the post read as though we were still porting.
+
         Two numbers in your section while you are in there: the Eclipse plugin is 1,384 Java files
         and about 187,000 lines, not 1,428 and 192,000. And December was 131 commits for you, 130
         of them by the 21st, not 129. ]]
@@ -243,6 +248,20 @@ The first is Paul's own correction, and he is right to make it: he did not inven
 specifications. He extracted them from the Eclipse plugin. The idea he contributed was that the
 old plugin *was* the specification, which is not a small thing to notice, but the content came
 out of code I had been maintaining for years without ever seeing it that way.
+
+I should be equally careful in the other direction, because the story so far makes the Eclipse
+plugin sound like it drove all nine months. It did not. It was the kickstart, and I have barely
+looked at it since.
+
+Most of what the plugin does now has no counterpart over there. The localization editor, the face
+ID editor and most of the twenty-eight areas did not exist in Eclipse at all — they are not ports
+of anything. The entity modeler is the one that resembles its ancestor, and even it has a great
+deal in it that never existed there, plus the whole Model Data Creator integration, which
+generates model files from annotated Java classes and had nothing to port from.
+
+So the extraction was exactly right for the question it answered — what would a replacement have
+to do — and it answered it inside the first fortnight. After that, what was being built stopped
+being a port.
 
 The second is that I did not keep his method as he wrote it. I copied it exactly at first, long
 prompts and all, and I hit the same wall as I had with the twenty pages: it asked me to write
