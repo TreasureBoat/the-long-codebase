@@ -315,9 +315,9 @@ check that first — and treat two months of silence as the alarming thing it is
 
 ## Where it is now
 
-Version 1.2.7 is what the marketplace serves — tagged on 27 August, published on the 30th. It
-fixed three small things, one of which was an empty file producing a stack trace instead of an
-editor.
+Version 1.2.8 is what the marketplace serves, released on 1 September; it lets a fresh install
+fetch its own licence. The release before it fixed three small things, one of which was an empty
+file producing a stack trace instead of an editor.
 
 The framework it supports is one I rebuilt by hand because its original was discontinued. The
 plugin that now edits its models was started by someone who does not write framework code, using
