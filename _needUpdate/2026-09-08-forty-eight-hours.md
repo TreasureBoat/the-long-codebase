@@ -15,20 +15,28 @@ cta_hook: "Both halves of this were written by the people who did them. If you w
 
 ## Paul
 
-I had spent about a month telling Ken what I was getting out of Claude, without much progress,
-and I want to be fair about why. He was not stonewalling. He had used Copilot, it had handed him
-a plausible and wrong answer, and he had drawn a reasonable conclusion from his own evidence. He
-tells that story below. It was not an argument I was going to win by making it again more loudly.
+I had just come off a hard session at the day job that had gone extremely well, and I called Ken
+to tell him about it. I had been doing versions of that call for about a month. He was not
+stonewalling — he had used Copilot, it had handed him a plausible and wrong answer, and he had
+drawn a reasonable conclusion from his own evidence. He tells that story below. It was not an
+argument I was going to win by making it again more loudly.
 
-What broke it was a conversation I took as a challenge. Ken does not remember issuing one, and
-I believe him — he says below that the idea of a prototype, and of starting from the Eclipse
-plugin, would not have occurred to him. So it was a challenge that existed on one side of the
-call only. That is probably common and worth being accurate about. What I heard was: if the tool
-is any good, show me on my own ground.
+What actually came out of that call was not agreement. It was that he started talking about
+something he wanted: moving our TreasureBoat development off Eclipse and onto IntelliJ. And he
+said that one of the first things anyone would have to prove was that an IntelliJ plugin could
+do the component editing — the WO and TB component files, their bindings, the navigation between
+them. That is the part of the toolchain the work actually runs through.
 
-So I did, and the ground was the point. It put the claim somewhere it could be checked, in his
-framework and an IDE I had never written a plugin for, at a size where failure would have been
-obvious and quick. If I could not do it, there would have been nothing more to discuss.
+I took that as the challenge. Ken says he never issued one, and I believe him: he was describing
+a want and naming the hard part of it, not handing me a task. He says below that the idea of a
+prototype would not have occurred to him. So the challenge existed on one side of the call only.
+
+That distinction matters more than it looks, because it is why the demonstration worked. The
+skeptic defined the acceptance criterion. I did not pick something I could do, or something that
+would look good in a screenshot. I built the thing he had named as the proof, on his framework,
+in an IDE I had never written a plugin for, where failing would have been obvious and quick. The
+first specification in that repository is called `001-intellij-component-editor`, and it is
+dated the Saturday.
 
 It took me that weekend to get it started. Ken's half opens with the forty-eight hours; here is
 what was inside them: seven commits, from 08:21 on Saturday 29 November to 16:31 on the Sunday.
