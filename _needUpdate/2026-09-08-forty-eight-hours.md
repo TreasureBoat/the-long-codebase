@@ -20,25 +20,28 @@ and I want to be fair about why. He was not stonewalling. He had used Copilot, i
 a plausible and wrong answer, and he had drawn a reasonable conclusion from his own evidence. He
 tells that story below. It was not an argument I was going to win by making it again more loudly.
 
-What broke it was not my persistence. It was that he challenged me to build the first module of
-an IntelliJ plugin for his framework.
+What broke it was a conversation I took as a challenge. Ken does not remember issuing one, and
+I believe him — he says below that the idea of a prototype, and of starting from the Eclipse
+plugin, would not have occurred to him. So it was a challenge that existed on one side of the
+call only. That is probably common and worth being accurate about. What I heard was: if the tool
+is any good, show me on my own ground.
 
-That is a good challenge, and I want to give him credit for it rather than take it. It put the
-claim somewhere it could be checked, on ground he owned and I did not, at a size where failure
-would have been obvious and quick. If I could not do it, there would have been nothing more to
-discuss.
+So I did, and the ground was the point. It put the claim somewhere it could be checked, in his
+framework and an IDE I had never written a plugin for, at a size where failure would have been
+obvious and quick. If I could not do it, there would have been nothing more to discuss.
 
 It took me that weekend to get it started. Ken's half opens with the forty-eight hours; here is
 what was inside them: seven commits, from 08:21 on Saturday 29 November to 16:31 on the Sunday.
 He committed on the Monday.
 
 That weekend was the initial prototype, and it is only the first part. I kept going through
-December, prototyping other components — 129 commits by the time I stopped on the 21st. The
-weekend answered his challenge. December is what actually convinced him, and the measure of that
+December, prototyping other components — 131 commits that month, 130 of them by the time I
+stopped on the 21st. The
+weekend answered the question. December is what actually convinced him, and the measure of that
 is not anything I said: he went from the free plan to Pro to Max inside those few weeks.
 
 We were not building an IntelliJ plugin. We were **porting** one. There was already an Eclipse
-plugin for the framework — 1,428 Java files, about 192,000 lines — and it worked, and people used
+plugin for the framework — 1,384 Java files, about 187,000 lines — and it worked, and people used
 it. Which means the specification for the IntelliJ version already existed. It was just encoded
 as behavior in a codebase rather than written down anywhere.
 
@@ -55,7 +58,7 @@ That is why someone who does not maintain the framework could produce something 
 I did not need to understand EOModels — the database-to-object mappings TreasureBoat runs on — or
 its D2W rules, which decide what a screen shows without anyone writing the screen, well enough to
 specify tooling for them. The Eclipse plugin already understood them, in detail, correctly, and
-reading 192,000 lines to extract what a replacement would have to do is precisely the tedious
+reading 187,000 lines to extract what a replacement would have to do is precisely the tedious
 cross-referencing I would have given up on by the second afternoon.
 
 What I contributed was not the specification. It was noticing that the task everyone would have
@@ -102,31 +105,6 @@ months is beside the point; they had already done their job by 1 December.
 that by then it did not matter. Ken had made more commits in December than I had, on his own
 features, in the parts I could not have finished anyway. The thing I was worried about in
 November — that this would be a demo he politely ignored — was long over.
-
-[[NOTE  PAUL — (3) does not match my memory, and it goes the other way. I did not challenge you.
-        You decided to build a prototype and you decided to start from the Eclipse plugin, and I
-        did not know you were doing either until I saw it. So the subtitle stands.
-
-        Take the credit rather than hand it to me. It was the first hard work on this and it was
-        the harder road: reading a plugin you did not maintain, to work out what a replacement
-        would have to do, before writing a line. The only word I would change is "challenge",
-        because I never issued one. My half now says what the month before was actually like,
-        which I think was the part missing from both our sections.
-
-        Your other two notes are done rather than pending: the specs correction is in "The thing
-        that lasted was not the code" — you extracted them from the Eclipse plugin and the idea
-        you contributed was noticing the old plugin WAS the specification — and the free/Pro/Max
-        line stays, with the timing added on my side, because it is the best evidence in the post
-        and it is mine to give.
-
-        One thing I have added rather than changed: my half now says the Eclipse plugin was the
-        kickstart and not the driver. Your section is about the fortnight when it WAS the driver,
-        so nothing there needs touching — but nine months on, most of what the plugin does has no
-        Eclipse counterpart at all, and the post read as though we were still porting.
-
-        Two numbers in your section while you are in there: the Eclipse plugin is 1,384 Java files
-        and about 187,000 lines, not 1,428 and 192,000. And December was 131 commits for you, 130
-        of them by the 21st, not 129. ]]
 
 ## Ken
 
