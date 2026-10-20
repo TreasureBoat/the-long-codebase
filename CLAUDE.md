@@ -78,6 +78,9 @@ produced a live 404 once. Never hardcode `/the-long-codebase/...`.
 **5. Every post needs `excerpt` in front matter.** Without it Jekyll takes the first
 paragraph, which has twice been the wrong thing. `author` must be the **key** from
 `_data/authors.yml` (`paul`, `ken`) — not the display name, or the byline silently vanishes.
+A jointly written post adds `coauthor:` beside it, the same kind of key: the byline reads
+"Ken Ishimoto & Paul Yu", both role lines render with their names attached, both addresses
+appear in the CTA, and the copyright names both. Omit it and every post renders as before.
 `cta_hook` is optional, one post-specific sentence above the standing call to action.
 
 **6. American spelling** — skeptic, modernize. It is what the existing text uses.
