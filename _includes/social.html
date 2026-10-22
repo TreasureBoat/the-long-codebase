@@ -1,0 +1,30 @@
+{%- comment -%}
+  Overrides minima's social.html, which renders exactly one `site.github_username`. This blog is
+  written by two people who each have an account, and the organisation owns the repository, so
+  there are three links to make.
+
+  The organisation comes from _config.yml; the people come from _data/authors.yml, the same file
+  the bylines, the CTA and the footer read. Adding an author there with a `github:` key puts them
+  here too.
+
+  Minima's other platforms are not carried over: none of them are configured, and twelve unused
+  branches make the file hard to read. If one is ever wanted, take the line from
+  minima-2.5.1/_includes/social.html — the markup and the icon sprite are unchanged here.
+
+  Paul's is his PERSONAL account. He has a second, work-linked one; CLAUDE.md explains why that must
+  never appear against this repository.
+{%- endcomment -%}
+<ul class="social-media-list">
+  {%- if site.github_username -%}
+    <li><a href="https://github.com/{{ site.github_username | cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg> <span class="username">{{ site.github_username | escape }}</span></a></li>
+  {%- endif -%}
+  {%- for author in site.data.authors -%}
+    {%- assign person = author[1] -%}
+    {%- if person.github -%}
+      <li><a href="https://github.com/{{ person.github | cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg> <span class="username">{{ person.github | escape }}</span></a></li>
+    {%- endif -%}
+  {%- endfor -%}
+  {%- if site.rss -%}
+    <li><a href="{{ 'feed.xml' | relative_url }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use></svg> <span>{{ site.rss | escape }}</span></a></li>
+  {%- endif -%}
+</ul>

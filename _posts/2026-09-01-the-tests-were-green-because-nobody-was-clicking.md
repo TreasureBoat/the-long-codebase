@@ -295,6 +295,11 @@ could not pay for it. That constraint is gone, and what replaced it is that I ca
 test code in a week than I can meaningfully read. A suite that is 90% honest is indistinguishable
 from one that is 100% honest by every signal a dashboard gives me. Both are green.
 
+Ken hit the same change from the other end and put it better than I have: [cheap execution changes
+which questions get asked]({{ site.baseurl }}{% post_url 2026-09-04-finished-and-thrown-away %}).
+When the work was expensive, the estimate forced you to check whether it was worth doing. Nothing
+forces that now.
+
 So the job changed. It is now writing acceptance criteria that name the mechanism rather than the
 outcome. "The transcript persists" is satisfied by an API call. "A person typing into the editor
 produces a saved record" is not. The second is barely longer and it is the entire difference.

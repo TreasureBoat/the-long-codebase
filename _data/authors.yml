@@ -5,6 +5,8 @@
 ken:
   name: Ken Ishimoto
   email: k.ishimoto@treasureboat.org
+  # Personal account. The footer links these; see _includes/social.html.
+  github: ishimoto
   role: >-
     Self-taught since 1988. Reverse-engineered a discontinued closed-source framework by
     hand rather than abandon fifteen years of work, and maintains what came out of it.
@@ -13,6 +15,8 @@ ken:
 paul:
   name: Paul Yu
   email: paul.yu@greenorchidtechnologies.com
+  # Personal account, not the work-linked one — see the identity section of CLAUDE.md.
+  github: pyu13821
   role: >-
     A business-oriented program manager who can actually program. Built and has run the same
     production SaaS for fifteen years — most of its features, all of its support email. Knows
