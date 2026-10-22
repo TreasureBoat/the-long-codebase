@@ -3,6 +3,7 @@ layout: post
 title: "The part that had no deadline"
 subtitle: "We converted 161 of 165 screens by hand and still failed, because finishing the conversion and finishing the work turned out to be different things"
 author: paul
+date: 2026-10-22 08:00:00 -0400
 series: modernization
 excerpt: >-
   Two experienced developers, a codebase one of us wrote and the other's framework runs, a
@@ -10,8 +11,7 @@ excerpt: >-
   were slow. Because only one of the competing jobs ever had a date on it.
 cta_hook: "If you have a modernization that has been nearly done for a year, this post is about why."
 #
-# DRAFT — part 3 of the modernization series.
-# Markers:  [[FACT]] number/name  ·  [[ASK]] answer becomes prose  ·  [[NOTE]] delete before publishing
+# Part 3 of the modernization series.
 #
 # Post 1 already spent: the January-to-August framing (now corrected), 95 tables / 165
 # components / 330 files, build-alongside strategy, June 2023 and September 2024 dates,
